@@ -1,6 +1,6 @@
 package businesslogic.loginbl;
 
-public class LoginLineItem {
+public class LoginLineItem implements UserInfo{
 	int id;
 	String name;
 	String password;
