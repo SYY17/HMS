@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="presentation.userui.user.HotelInformation_controller">
+   <children>
+      <Pane id="panel_top" prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Label id="default" layoutX="24.0" layoutY="18.0" text="欢迎您">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="81.0" layoutY="19.0" text="admin">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label id="default" layoutX="459.0" layoutY="18.0" text="日期">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="501.0" layoutY="19.0" text="2016-10-10">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="132.0" layoutY="16.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="252.0" layoutY="17.0" text="酒店管理系统">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="501.0" layoutY="363.0" mnemonicParsing="false" onAction="#onBack" text="返回" />
+      <TableView layoutX="35.0" layoutY="155.0" prefHeight="200.0" prefWidth="532.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="房间类型" />
+          <TableColumn prefWidth="66.0" text="总数量" />
+            <TableColumn prefWidth="63.0" text="空余数" />
+            <TableColumn prefWidth="228.0" text="简介" />
+            <TableColumn prefWidth="71.0" text="价格" />
+        </columns>
+      </TableView>
+      <Slider layoutX="567.0" layoutY="155.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="15.0" />
+      <TextArea layoutX="35.0" layoutY="53.0" prefHeight="92.0" prefWidth="532.0" promptText="酒店名称,评分,位置,简要介绍" />
+      <Slider layoutX="567.0" layoutY="53.0" orientation="VERTICAL" prefHeight="92.0" prefWidth="15.0" />
+   </children>
+</Pane>
