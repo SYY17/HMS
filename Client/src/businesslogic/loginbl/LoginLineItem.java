@@ -1,11 +1,11 @@
-package businesslogic.userbl;
+package businesslogic.loginbl;
 
-public class UserLineItem {
+public class LoginLineItem {
 	int id;
 	String name;
 	String password;
 	
-	public UserLineItem(int i,String n,String p){
+	public LoginLineItem(int i,String n,String p){
 		id=i;
 		name=n;
 		password=p;
@@ -13,7 +13,7 @@ public class UserLineItem {
 
 	/**
 	 * 
-	 * @return 获得用户ID
+	 * @return 获得在线用户ID
 	 */
 	public int getID(){
 		return id;
@@ -22,7 +22,7 @@ public class UserLineItem {
 	/**
 	 * 
 	 * @param id
-	 * @return 设置用户id
+	 * @return 设置在线用户ID
 	 */
 	public void setID(int id){
 		this.id=id;
@@ -30,7 +30,7 @@ public class UserLineItem {
 	
 	/**
 	 * 
-	 * @return 获得用户name
+	 * @return 获得在线用户name
 	 */
 	public String getName(){
 		return name;
@@ -39,7 +39,7 @@ public class UserLineItem {
 	/**
 	 * 
 	 * @param name
-	 * @return 设置用户name
+	 * @return 设置在线用户name
 	 */
 	public void setName(String name){
 		this.name=name;
@@ -47,7 +47,7 @@ public class UserLineItem {
 	
 	/**
 	 * 
-	 * @return 获得订单对应用户ID
+	 * @return 获得在线用户password
 	 */
 	public String getPassword(){
 		return password;
@@ -56,7 +56,7 @@ public class UserLineItem {
 	/**
 	 * 
 	 * @param password
-	 * @return 设置用户password
+	 * @return 获得在线用户password
 	 */
 	public void setPassword(String password){
 		this.password=password;
