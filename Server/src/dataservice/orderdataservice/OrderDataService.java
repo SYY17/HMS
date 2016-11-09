@@ -1,28 +1,49 @@
-/*
- *@(#)OrderDatabaseService.java 2016年10月14日
- *
- *Copyright 2016 Zyz,All rights reserved.
- */
 package dataservice.orderdataservice;
 
 import java.rmi.RemoteException;
 
 import po.OrderPO;
 
-/**
- *
- * @author 宇州
- */
 public interface OrderDataService {
-	public void insert(OrderPO po) throws RemoteException;
+	
+	/**
+	 * 
+	 * @param opo
+	 * @throws RemoteException
+	 */
+	public void insert(OrderPO opo) throws RemoteException;
 
-	public void delete(OrderPO po) throws RemoteException;
+	/**
+	 * 
+	 * @param opo
+	 * @throws RemoteException
+	 */
+	public void delete(OrderPO opo) throws RemoteException;
 
-	public void upate(OrderPO po) throws RemoteException;
+	/**
+	 * 
+	 * @param opo
+	 * @throws RemoteException
+	 */
+	public void upate(OrderPO opo) throws RemoteException;
 
+	/**
+	 * 
+	 * @param id
+	 * @return 鏍规嵁ID鏌ユ壘骞惰幏寰楃殑璁㈠崟淇℃伅
+	 * @throws RemoteException
+	 */
 	public OrderPO find(int id) throws RemoteException;
 
+	/**
+	 * 
+	 * @throws RemoteException
+	 */
 	public void init() throws RemoteException;
 
+	/**
+	 * 
+	 * @throws RemoteException
+	 */
 	public void finish() throws RemoteException;
 }
