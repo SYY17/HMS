@@ -1,13 +1,11 @@
-package vo;
-import java.io.*;
-import java.util.*;
+package businesslogic.orderbl;
 
-import po.RoomPO;
-public class OrderVO implements Serializable{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+import java.util.ArrayList;
+import java.util.Date;
+
+import vo.RoomVO;
+
+public class OrderLineItem{
 	int userID;
 	Date setTime;
 	Date checkIn;
@@ -17,7 +15,7 @@ public class OrderVO implements Serializable{
 	ArrayList<RoomVO> rooms;
 
 	
-	public OrderVO(int i,Date s,Date ci,Date co,int rn,int hID,ArrayList<RoomVO> rt){
+	public OrderLineItem(int i,Date s,Date ci,Date co,int rn,int hID,ArrayList<RoomVO> rt){
 		userID=i;
 		setTime=s;
 		checkIn=ci;
@@ -37,10 +35,24 @@ public class OrderVO implements Serializable{
 	
 	/**
 	 * 
+	 */
+	public void setUserID(int userID) {
+		this.userID = userID;
+	}
+	
+	/**
+	 * 
 	 * @return 获得订单对应下单时间
 	 */
 	public Date getSetTime(){
 		return setTime;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setSetTime(Date setTime) {
+		this.setTime = setTime;
 	}
 	
 	/**
@@ -53,10 +65,24 @@ public class OrderVO implements Serializable{
 	
 	/**
 	 * 
+	 */
+	public void setCheckIn(Date checkIn) {
+		this.checkIn = checkIn;
+	}
+	
+	/**
+	 * 
 	 * @return 获得订单对应离开时间
 	 */
 	public Date getCheckOut(){
 		return checkOut;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setCheckOut(Date checkOut) {
+		this.checkOut = checkOut;
 	}
 	
 	/**
@@ -69,6 +95,13 @@ public class OrderVO implements Serializable{
 	
 	/**
 	 * 
+	 */
+	public void setRoomNumber(int roomNumber) {
+		this.roomNumber = roomNumber;
+	}
+	
+	/**
+	 * 
 	 * @return 获得订单对应酒店ID
 	 */
 	public int getHotelID(){
@@ -77,10 +110,22 @@ public class OrderVO implements Serializable{
 	
 	/**
 	 * 
+	 */
+	public void setHotelID(int hotelID) {
+		this.hotelID = hotelID;
+	}
+	/**
+	 * 
 	 * @return 获得订单对应房间列表
 	 */
 	public ArrayList<RoomVO> getRooms(){
 		return rooms;
 	}
+	
+	/**
+	 * 
+	 */
+	public void setRooms(ArrayList<RoomVO> rooms) {
+		this.rooms = rooms;
+	}
 }
-

@@ -45,7 +45,7 @@ public class OrderPO implements Serializable{
 	 * 
 	 * @return 获得订单对应入住时间
 	 */
-	public Date getCheckInTime(){
+	public Date getCheckIn(){
 		return checkIn;
 	}
 	
@@ -53,7 +53,7 @@ public class OrderPO implements Serializable{
 	 * 
 	 * @return 获得订单对应离开时间
 	 */
-	public Date getCheckOutTime(){
+	public Date getCheckOut(){
 		return checkOut;
 	}
 	

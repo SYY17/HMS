@@ -65,7 +65,7 @@ public class OrderBLService_Stub implements OrderBLService {
 	 */
 	@Override
 	public ResultMessage cancelOrder(OrderVO ovo) {
-		if (ovo.getCheckInTime() == checkIn && ovo.getCheckOutTime() == checkOut && ovo.getHotelID() == hotelID
+		if (ovo.getCheckIn() == checkIn && ovo.getCheckOut() == checkOut && ovo.getHotelID() == hotelID
 				&& ovo.getRoomNumber() == roomNumber && ovo.getRooms() == rooms && ovo.getSetTime() == setTime
 				&& ovo.getUserID() == userID) {
 			if ((mockHotel.modifyOrderList(0, null) == ResultMessage.TRUE)
