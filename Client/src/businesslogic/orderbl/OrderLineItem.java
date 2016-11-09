@@ -3,6 +3,8 @@ package businesslogic.orderbl;
 import java.util.ArrayList;
 import java.util.Date;
 
+import po.OrderPO;
+import po.RoomPO;
 import vo.RoomVO;
 
 public class OrderLineItem{
@@ -25,6 +27,25 @@ public class OrderLineItem{
 		rooms=rt;
 	}
 	
+	public OrderLineItem(OrderPO opo){
+		userID=opo.getUserID();
+		setTime=opo.getSetTime();
+		checkIn=opo.getCheckIn();
+		checkOut=opo.getCheckOut();
+		roomNumber=opo.getRoomNumber();
+		hotelID=opo.getHotelID();
+		ArrayList<RoomPO> roomPOList = opo.getRooms();
+		rooms=po2vo(roomPOList);
+	}
+	
+	private ArrayList<RoomVO> po2vo(ArrayList<RoomPO> roomPOList){
+		ArrayList<RoomVO> roomVOList = new ArrayList<RoomVO>();
+		for(RoomPO roomPO : roomPOList){
+			roomVOList.add(new RoomVO(roomPO.getRoomType(),roomPO.getState(),roomPO.getPrice()));
+		}
+		return rooms;
+	}
+	
 	/**
 	 * 
 	 * @return 获得订单对应用户ID
@@ -35,6 +56,7 @@ public class OrderLineItem{
 	
 	/**
 	 * 
+	 * @param userID
 	 */
 	public void setUserID(int userID) {
 		this.userID = userID;
@@ -50,6 +72,7 @@ public class OrderLineItem{
 	
 	/**
 	 * 
+	 * @param setTime
 	 */
 	public void setSetTime(Date setTime) {
 		this.setTime = setTime;
@@ -65,6 +88,7 @@ public class OrderLineItem{
 	
 	/**
 	 * 
+	 * @param checkIn
 	 */
 	public void setCheckIn(Date checkIn) {
 		this.checkIn = checkIn;
@@ -80,6 +104,7 @@ public class OrderLineItem{
 	
 	/**
 	 * 
+	 * @param checkOut
 	 */
 	public void setCheckOut(Date checkOut) {
 		this.checkOut = checkOut;
@@ -95,6 +120,7 @@ public class OrderLineItem{
 	
 	/**
 	 * 
+	 * @param roomNumber
 	 */
 	public void setRoomNumber(int roomNumber) {
 		this.roomNumber = roomNumber;
@@ -110,6 +136,7 @@ public class OrderLineItem{
 	
 	/**
 	 * 
+	 * @param hotelID
 	 */
 	public void setHotelID(int hotelID) {
 		this.hotelID = hotelID;
@@ -124,6 +151,7 @@ public class OrderLineItem{
 	
 	/**
 	 * 
+	 * @param rooms
 	 */
 	public void setRooms(ArrayList<RoomVO> rooms) {
 		this.rooms = rooms;

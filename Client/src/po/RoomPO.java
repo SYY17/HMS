@@ -1,5 +1,6 @@
 package po;
 import java.io.*;
+import vo.RoomType;
 public class RoomPO implements Serializable{
 	/**
 	 * 
@@ -26,9 +27,4 @@ public class RoomPO implements Serializable{
 	public int getPrice(){
 		return price;
 	}
-}
-
-enum RoomType{
-	SINGLE_ROOM,DOUBLE_ROOM,TRIPLE_ROOM,STANDARD_ROOM,SUPERIOR_ROOM,DELUXE_ROOM,BUSINESS_ROOM,
-	SPECIAL_ROOM,TWIN_ROOM,QUEEN_ROOM
 }
