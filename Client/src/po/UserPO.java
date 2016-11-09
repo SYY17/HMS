@@ -22,14 +22,26 @@ public class UserPO implements Serializable{//can we add a Userole just like the
 		password=p;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户名
+	 */
 	public String getName(){
 		return name;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户ID
+	 */
 	public int getID(){
 		return id;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户密码
+	 */
 	public String getPassword(){
 		return password;
 	}
@@ -54,22 +66,42 @@ class CustomerPO extends UserPO{
 		answerToQues=ans;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户地址
+	 */
 	public String getAddress(){
 		return address;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户电话号码
+	 */
 	public String getPhoneNumber(){
 		return phoneNumber;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户默认问题
+	 */
 	public String getDefaultQuestion(){
 		return defaultQuestion;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户默认问题答案
+	 */
 	public String getAnsToAns(){
 		return answerToQues;
 	}
 	
+	/**
+	 * 
+	 * @return 获得用户信用
+	 */
 	public int getCredit(){
 		return credit;
 	}
