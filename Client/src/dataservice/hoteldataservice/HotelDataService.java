@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import po.HotelPO;
 
 public interface HotelDataService {
-	
+
 	/**
 	 * 
 	 * @param hpo
