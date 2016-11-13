@@ -6,9 +6,9 @@ public class UserLineItem {
 	String password;
 	
 	public UserLineItem(int i,String n,String p){
-		id=i;
-		name=n;
-		password=p;
+		id = i;
+		name = n;
+		password = p;
 	}
 
 	/**
@@ -25,7 +25,7 @@ public class UserLineItem {
 	 * @return 设置用户id
 	 */
 	public void setID(int id){
-		this.id=id;
+		this.id = id;
 	}
 	
 	/**
@@ -42,7 +42,7 @@ public class UserLineItem {
 	 * @return 设置用户name
 	 */
 	public void setName(String name){
-		this.name=name;
+		this.name = name;
 	}
 	
 	/**
@@ -59,6 +59,6 @@ public class UserLineItem {
 	 * @return 设置用户password
 	 */
 	public void setPassword(String password){
-		this.password=password;
+		this.password = password;
 	}
 }

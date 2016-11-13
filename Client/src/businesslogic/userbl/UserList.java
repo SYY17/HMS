@@ -10,7 +10,7 @@ public class UserList {
 	 * @param userList
 	 */
 	public void setUserList(ArrayList<UserLineItem> userList){
-		this.userList=userList;
+		this.userList = userList;
 	}
 	
 	/**

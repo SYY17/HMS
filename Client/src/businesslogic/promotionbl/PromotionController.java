@@ -2,7 +2,6 @@ package businesslogic.promotionbl;
 
 import java.util.ArrayList;
 import java.util.Date;
-
 import businesslogicservice.ResultMessage;
 import businesslogicservice.promotionblservice.PromotionBLService;
 import vo.PromotionVO;

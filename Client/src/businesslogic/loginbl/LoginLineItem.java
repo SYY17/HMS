@@ -21,16 +21,7 @@ public class LoginLineItem implements UserInfo{
 	
 	/**
 	 * 
-	 * @param id
-	 * @return 设置在线用户ID
-	 */
-	public void setID(int id){
-		this.id=id;
-	}
-	
-	/**
-	 * 
-	 * @return 获得在线用户name
+	 * @return 获得在线用户用户名
 	 */
 	public String getName(){
 		return name;
@@ -38,27 +29,10 @@ public class LoginLineItem implements UserInfo{
 	
 	/**
 	 * 
-	 * @param name
-	 * @return 设置在线用户name
-	 */
-	public void setName(String name){
-		this.name=name;
-	}
-	
-	/**
-	 * 
-	 * @return 获得在线用户password
+	 * @return 获得在线用户用户密码
 	 */
 	public String getPassword(){
 		return password;
 	}
 	
-	/**
-	 * 
-	 * @param password
-	 * @return 获得在线用户password
-	 */
-	public void setPassword(String password){
-		this.password=password;
-	}
 }

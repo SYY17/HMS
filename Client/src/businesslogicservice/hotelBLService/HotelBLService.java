@@ -6,59 +6,60 @@ import vo.HotelVO;
 import vo.RoomVO;
 
 public interface HotelBLService{
+	
 	/**
-	 * 浏览酒店信息
+	 * 
 	 * @param name
-	 * @return hotelInfoList
+	 * @return 浏览酒店信息
 	 */
 	public ArrayList<HotelVO> reviewHotelInfo(String name);
 	
 	/**
-	 * 浏览酒店列表
+	 * 
 	 * @param 
-	 * @return hotelList
+	 * @return 浏览酒店列表
 	 */
 	public ArrayList<HotelVO> reviewHotelList();
 	
 	/**
-	 * 创建酒店
+	 * 
 	 * @param hvo
-	 * @return ResultMessage
+	 * @return 创建酒店
 	 */
 	public ResultMessage createHotel(HotelVO hvo);
 	
 	/**
-	 * 删除酒店
+	 * 
 	 * @param hvo
-	 * @return ResultMessage
+	 * @return 删除酒店
 	 */
 	public ResultMessage deleteHotel(HotelVO hvo);
 	
 	/**
-	 * 修改酒店基本信息
+	 * 
 	 * @param hvo
-	 * @return ResultMessage
+	 * @return 修改酒店基本信息
 	 */
 	public ResultMessage modifyHotel(HotelVO hvo);
 	
 	/**
-	 * 评价酒店
+	 * 
 	 * @param hvo
-	 * @return ResultMessage
+	 * @return 评价酒店
 	 */
 	public ResultMessage gradeHotel(HotelVO hvo);
 	
 	/**
-	 * 按酒店名称搜索酒店基本信息
+	 * 
 	 * @param name
-	 * @return hotelInfoList
+	 * @return 按酒店名称搜索酒店基本信息
 	 */
 	public ArrayList<HotelVO> searchHotel(String name);
 	
 	/**
-	 * 按类型搜索房间
+	 * 
 	 * @param type
-	 * @return RoomInfoList
+	 * @return 按类型搜索房间
 	 */
 	public ArrayList<RoomVO> searchRoom(String type);
 	

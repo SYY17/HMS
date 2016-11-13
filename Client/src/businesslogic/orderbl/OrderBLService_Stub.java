@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import businesslogicservice.ResultMessage;
 import businesslogicservice.orderblservice.OrderBLService;
+import businesslogictest.orderbl.MockHotel;
+import businesslogictest.orderbl.MockUser;
 import vo.HotelVO;
 import vo.OrderVO;
 import vo.PromotionVO;
@@ -65,7 +67,7 @@ public class OrderBLService_Stub implements OrderBLService {
 	 */
 	@Override
 	public ResultMessage cancelOrder(OrderVO ovo) {
-		if (ovo.getCheckIn() == checkIn && ovo.getCheckOut() == checkOut && ovo.getHotelID() == hotelID
+		if (ovo.getCheckInTime() == checkIn && ovo.getCheckOutTime() == checkOut && ovo.getHotelID() == hotelID
 				&& ovo.getRoomNumber() == roomNumber && ovo.getRooms() == rooms && ovo.getSetTime() == setTime
 				&& ovo.getUserID() == userID) {
 			if ((mockHotel.modifyOrderList(0, null) == ResultMessage.TRUE)
