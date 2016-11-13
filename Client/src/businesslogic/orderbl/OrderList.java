@@ -2,27 +2,12 @@ package businesslogic.orderbl;
 
 import java.util.ArrayList;
 
-import vo.OrderVO;
-
 public class OrderList {
 	ArrayList<OrderLineItem> orderList;
 
-	private OrderLineItem vo2lineitem(OrderVO ovo) {
-		OrderLineItem orderLineItem = new OrderLineItem(ovo.getHotelID(), ovo.getSetTime(), ovo.getCheckIn(),
-				ovo.getCheckOut(), ovo.getRoomNumber(), ovo.getHotelID(), ovo.getRooms());
-		return orderLineItem;
-	}
-
-	private OrderVO lineitem2vo(OrderLineItem oderLineItem) {
-		OrderVO ovo = new OrderVO(oderLineItem.getHotelID(), oderLineItem.getSetTime(), oderLineItem.getCheckIn(),
-				oderLineItem.getCheckOut(), oderLineItem.getRoomNumber(), oderLineItem.getHotelID(),
-				oderLineItem.getRooms());
-		return ovo;
-	}
-
 	/**
 	 * 
-	 * @param orderList
+	 * @return 获得订单列表
 	 */
 	public void setOrderList(ArrayList<OrderLineItem> orderList) {
 		this.orderList = orderList;
@@ -30,41 +15,24 @@ public class OrderList {
 
 	/**
 	 * 
-	 * @return 获得订单列表
 	 */
 	public ArrayList<OrderLineItem> getOrderList() {
 		return orderList;
 	}
 
-	/**
-	 * 
-	 * @param ovo
-	 */
-	public void addLineItem(OrderVO ovo) {
-		orderList.add(vo2lineitem(ovo));
+	public void add(OrderLineItem orderLineItem) {
+		orderList.add(orderLineItem);
 	}
 
-	/**
-	 * 
-	 * @param ovo
-	 */
-	public void deleteLineItem(OrderVO ovo) {
-		orderList.remove(vo2lineitem(ovo));
+	public void delete(int id) {
+		orderList.remove(id);
 	}
 
-	/**
-	 * 
-	 * @param ovo
-	 */
-	public void modifyLineItem(OrderVO ovo) {
-		orderList.set(orderList.indexOf(vo2lineitem(ovo)), vo2lineitem(ovo));
+	public void modify(OrderLineItem orderLineItem, int id) {
+		orderList.set(id, orderLineItem);
 	}
 
-	/**
-	 * 
-	 * @param id
-	 */
-	public OrderVO findLineItem(int id) {
-		return lineitem2vo(orderList.get(id));
+	public void find(int id) {
+		orderList.get(id);
 	}
 }
