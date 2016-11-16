@@ -10,35 +10,33 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="presentation.userui.user.DetailedInformation_controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userui.user.DetailedInformation_controller">
    <children>
-      <Pane id="panel_top" prefHeight="53.0" prefWidth="600.0">
+      <Pane id="panel_top" prefHeight="100.0" prefWidth="800.0">
          <children>
-            <Label id="default" layoutX="24.0" layoutY="18.0" text="欢迎您">
+            <Label id="default" layoutX="14.0" layoutY="47.0" text="欢迎您">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label id="info" layoutX="81.0" layoutY="19.0" text="admin">
+            <Label id="info" layoutX="79.0" layoutY="44.0" text="admin">
                <font>
-                  <Font size="13.0" />
+                  <Font size="20.0" />
                </font>
             </Label>
-            <Label id="default" layoutX="459.0" layoutY="18.0" text="日期">
+            <Label id="default" layoutX="632.0" layoutY="44.0" text="日期">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label id="info" layoutX="501.0" layoutY="19.0" text="2016-10-10">
+            <Label id="info" layoutX="692.0" layoutY="44.0" text="2016-10-10">
                <font>
-                  <Font size="13.0" />
+                  <Font size="17.0" />
                </font>
             </Label>
-            <Button layoutX="132.0" layoutY="12.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
+            <Button layoutX="146.0" layoutY="38.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="36.0" prefWidth="57.0" text="注销">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -47,33 +45,69 @@ fx:controller="presentation.userui.user.DetailedInformation_controller">
                   <DropShadow />
                </effect>
             </Button>
-            <Label layoutX="252.0" layoutY="17.0" text="酒店管理系统">
+            <Label layoutX="325.0" layoutY="23.0" prefHeight="63.0" prefWidth="145.0" text="酒店管理系统">
                <font>
-                  <Font name="System Bold" size="16.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Button layoutX="61.0" layoutY="349.0" mnemonicParsing="false" onAction="#onEdit" text="编辑" />
-      <Button layoutX="288.0" layoutY="349.0" mnemonicParsing="false" onAction="#onSubmit" text="提交" />
-      <Button layoutX="507.0" layoutY="349.0" mnemonicParsing="false" onAction="#onBack" text="返回" />
-      <Label layoutX="66.0" layoutY="76.0" text="用户名" />
-      <Label layoutX="70.0" layoutY="209.0" text="手机" />
-      <Label layoutX="70.0" layoutY="124.0" text="密码" />
-      <Label layoutX="57.0" layoutY="168.0" text="确认密码" />
-      <Label layoutX="70.0" layoutY="256.0" text="邮箱" />
-      <Label layoutX="369.0" layoutY="76.0" text="生日" />
-      <Label layoutX="356.0" layoutY="124.0" text="常用住址" />
-      <Label layoutX="356.0" layoutY="168.0" text="默认问题" />
-      <Label layoutX="369.0" layoutY="209.0" text="答案" />
-      <TextField layoutX="121.0" layoutY="71.0" />
-      <TextField layoutX="121.0" layoutY="119.0" />
-      <TextField layoutX="121.0" layoutY="163.0" />
-      <TextField layoutX="121.0" layoutY="204.0" />
-      <TextField layoutX="121.0" layoutY="251.0" />
-      <TextField layoutX="419.0" layoutY="119.0" />
-      <TextField layoutX="419.0" layoutY="204.0" />
-      <ChoiceBox layoutX="419.0" layoutY="163.0" prefHeight="27.0" prefWidth="167.0" />
-      <DatePicker layoutX="417.0" layoutY="71.0" prefHeight="27.0" prefWidth="167.0" />
+      <Button layoutX="135.0" layoutY="499.0" mnemonicParsing="false" onAction="#onEdit" text="编辑">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="366.0" layoutY="499.0" mnemonicParsing="false" onAction="#onSubmit" text="提交">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="598.0" layoutY="499.0" mnemonicParsing="false" onAction="#onBack" text="返回">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Label layoutX="67.0" layoutY="126.0" text="用户名">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="75.0" layoutY="314.0" text="手机">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="75.0" layoutY="186.0" text="密码">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="250.0" text="确认密码">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="75.0" layoutY="384.0" text="邮箱">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="408.0" layoutY="126.0" text="生日">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="395.0" layoutY="186.0" text="常用住址">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="395.0" layoutY="249.0" text="默认问题">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="408.0" layoutY="314.0" text="答案">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TextField layoutX="143.0" layoutY="121.0" />
+      <TextField layoutX="143.0" layoutY="184.0" />
+      <TextField layoutX="143.0" layoutY="247.0" />
+      <TextField layoutX="143.0" layoutY="309.0" />
+      <TextField layoutX="143.0" layoutY="381.0" />
+      <TextField layoutX="499.0" layoutY="184.0" />
+      <TextField layoutX="499.0" layoutY="309.0" />
+      <ChoiceBox layoutX="499.0" layoutY="247.0" prefHeight="27.0" prefWidth="167.0" />
+      <DatePicker layoutX="499.0" layoutY="121.0" prefHeight="27.0" prefWidth="167.0" />
    </children>
 </Pane>

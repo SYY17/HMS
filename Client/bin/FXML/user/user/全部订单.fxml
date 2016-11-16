@@ -12,62 +12,22 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userui.user.AllOrder_controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userui.user.AllOrder_controller">
    <children>
-      <Pane id="panel_top" layoutX="7.0" prefHeight="53.0" prefWidth="600.0">
-         <children>
-            <Label id="default" layoutX="24.0" layoutY="18.0" text="欢迎您">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label id="info" layoutX="81.0" layoutY="19.0" text="admin">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <Label id="default" layoutX="459.0" layoutY="18.0" text="日期">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Label id="info" layoutX="501.0" layoutY="19.0" text="2016-10-10">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <Button layoutX="132.0" layoutY="12.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </Button>
-            <Label layoutX="252.0" layoutY="17.0" text="酒店管理系统">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <TabPane layoutX="41.0" layoutY="100.0" prefHeight="200.0" prefWidth="533.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="66.0" layoutY="151.0" prefHeight="299.0" prefWidth="668.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="全部订单">
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView prefHeight="169.0" prefWidth="533.0">
+                        <TableView layoutY="-1.0" prefHeight="269.0" prefWidth="668.0">
                            <columns>
                               <TableColumn prefWidth="60.0" text="编号" />
-                              <TableColumn prefWidth="85.0" text="酒店名称" />
-                              <TableColumn prefWidth="85.0" text="入住时间" />
-                              <TableColumn prefWidth="95.0" text="预计离开时间" />
-                              <TableColumn prefWidth="100.0" text="房间类型" />
-                              <TableColumn prefWidth="107.0" text="房间数量" />
+                              <TableColumn prefWidth="173.0" text="酒店名称" />
+                              <TableColumn prefWidth="121.0" text="入住时间" />
+                              <TableColumn prefWidth="139.0" text="预计离开时间" />
+                              <TableColumn prefWidth="77.0" text="房间数量" />
+                              <TableColumn prefWidth="97.0" text="房间类型" />
                            </columns>
                         </TableView>
                      </children>
@@ -78,14 +38,14 @@
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView prefHeight="169.0" prefWidth="533.0">
+                        <TableView prefHeight="269.0" prefWidth="668.0">
                            <columns>
                               <TableColumn prefWidth="60.0" text="编号" />
-                              <TableColumn prefWidth="85.0" text="酒店名称" />
-                              <TableColumn prefWidth="85.0" text="入住时间" />
-                              <TableColumn prefWidth="95.0" text="预计离开时间" />
-                              <TableColumn prefWidth="100.0" text="房间类型" />
-                              <TableColumn prefWidth="107.0" text="房间数量" />
+                              <TableColumn prefWidth="173.0" text="酒店名称" />
+                              <TableColumn prefWidth="121.0" text="入住时间" />
+                              <TableColumn prefWidth="139.0" text="预计离开时间" />
+                              <TableColumn prefWidth="77.0" text="房间数量" />
+                              <TableColumn prefWidth="97.0" text="房间类型" />
                            </columns>
                         </TableView>
                      </children>
@@ -96,14 +56,14 @@
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView prefHeight="169.0" prefWidth="533.0">
+                        <TableView prefHeight="269.0" prefWidth="668.0">
                            <columns>
                               <TableColumn prefWidth="60.0" text="编号" />
-                              <TableColumn prefWidth="85.0" text="酒店名称" />
-                              <TableColumn prefWidth="85.0" text="入住时间" />
-                              <TableColumn prefWidth="95.0" text="预计离开时间" />
-                              <TableColumn prefWidth="100.0" text="房间类型" />
-                              <TableColumn prefWidth="107.0" text="房间数量" />
+                              <TableColumn prefWidth="173.0" text="酒店名称" />
+                              <TableColumn prefWidth="121.0" text="入住时间" />
+                              <TableColumn prefWidth="139.0" text="预计离开时间" />
+                              <TableColumn prefWidth="77.0" text="房间数量" />
+                              <TableColumn prefWidth="97.0" text="房间类型" />
                            </columns>
                         </TableView>
                      </children>
@@ -114,14 +74,14 @@
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView prefHeight="169.0" prefWidth="533.0">
+                        <TableView prefHeight="269.0" prefWidth="668.0">
                            <columns>
                               <TableColumn prefWidth="60.0" text="编号" />
-                              <TableColumn prefWidth="85.0" text="酒店名称" />
-                              <TableColumn prefWidth="85.0" text="入住时间" />
-                              <TableColumn prefWidth="95.0" text="预计离开时间" />
-                              <TableColumn prefWidth="100.0" text="房间类型" />
-                              <TableColumn prefWidth="107.0" text="房间数量" />
+                              <TableColumn prefWidth="173.0" text="酒店名称" />
+                              <TableColumn prefWidth="121.0" text="入住时间" />
+                              <TableColumn prefWidth="139.0" text="预计离开时间" />
+                              <TableColumn prefWidth="77.0" text="房间数量" />
+                              <TableColumn prefWidth="97.0" text="房间类型" />
                            </columns>
                         </TableView>
                      </children>
@@ -132,14 +92,14 @@
                <content>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <TableView prefHeight="169.0" prefWidth="533.0">
+                        <TableView prefHeight="269.0" prefWidth="668.0">
                            <columns>
                               <TableColumn prefWidth="60.0" text="编号" />
-                              <TableColumn prefWidth="85.0" text="酒店名称" />
-                              <TableColumn prefWidth="85.0" text="入住时间" />
-                              <TableColumn prefWidth="95.0" text="预计离开时间" />
-                              <TableColumn prefWidth="100.0" text="房间类型" />
-                              <TableColumn prefWidth="107.0" text="房间数量" />
+                              <TableColumn prefWidth="173.0" text="酒店名称" />
+                              <TableColumn prefWidth="121.0" text="入住时间" />
+                              <TableColumn prefWidth="139.0" text="预计离开时间" />
+                              <TableColumn prefWidth="77.0" text="房间数量" />
+                              <TableColumn prefWidth="97.0" text="房间类型" />
                            </columns>
                         </TableView>
                      </children>
@@ -148,7 +108,50 @@
             </Tab>
         </tabs>
       </TabPane>
-      <Button layoutX="491.0" layoutY="335.0" mnemonicParsing="false" onAction="#onBack" text="返回" />
-      <Slider layoutX="578.0" layoutY="129.0" orientation="VERTICAL" prefHeight="171.0" prefWidth="15.0" />
+      <Button layoutX="698.0" layoutY="525.0" mnemonicParsing="false" onAction="#onBack" text="返回">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Slider layoutX="748.0" layoutY="151.0" orientation="VERTICAL" prefHeight="299.0" prefWidth="15.0" />
+      <Pane id="panel_top" prefHeight="100.0" prefWidth="800.0">
+         <children>
+            <Label id="default" layoutX="14.0" layoutY="47.0" text="欢迎您">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="79.0" layoutY="44.0" text="admin">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label id="default" layoutX="632.0" layoutY="44.0" text="日期">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="692.0" layoutY="44.0" text="2016-10-10">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="146.0" layoutY="38.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="36.0" prefWidth="57.0" text="注销">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="325.0" layoutY="23.0" prefHeight="63.0" prefWidth="145.0" text="酒店管理系统">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </Pane>
