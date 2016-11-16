@@ -34,13 +34,13 @@ public class LogFrame extends Application {
 		stage = primaryStage;
 		Pane root = new Pane();
 		root.setId("panel_log");
-		Scene scene = new Scene(root, 600, 400);
+		Scene scene = new Scene(root, 800, 600);
 		scene.getStylesheets().add(this.getClass().getResource("logFrame.css").toExternalForm());
 		
 		//title
-		Label label = new Label("¾Æµê¹ÜÀíÏµÍ³");
-		label.setLayoutX(210.0);
-		label.setLayoutY(44.0);
+		Label label = new Label("é…’åº—ç®¡ç†ç³»ç»Ÿ");
+		label.setLayoutX(315.0);
+		label.setLayoutY(59.0);
 		label.setFont(new Font(30.0));
 		label.setId("label_title");
 		root.getChildren().add(label);
@@ -51,27 +51,27 @@ public class LogFrame extends Application {
 		rectBig.setArcHeight(5.0);
 		rectBig.setArcWidth(5.0);
 		rectBig.setFill(Paint.valueOf("#cfd6dd"));
-		rectBig.setHeight(261.0);
-		rectBig.setWidth(539.0);
-		rectBig.setLayoutX(30.0);
-		rectBig.setLayoutY(109.0);
+		rectBig.setHeight(400.0);
+		rectBig.setWidth(706.0);
+		rectBig.setLayoutX(45.0);
+		rectBig.setLayoutY(145.0);
 		rectBig.setStrokeWidth(2.0);
 		rectBig.setEffect(new DropShadow());
 		
 		//body_Panel
 		Pane body = new Pane();
 		root.getChildren().add(body);
-		body.setLayoutX(62.0);
-		body.setLayoutY(113.0);
-		body.prefHeight(82.0);
-		body.prefWidth(119.0);
+		body.setLayoutX(93.0);
+		body.setLayoutY(151.0);
+		body.prefHeight(123.0);
+		body.prefWidth(159.0);
 		body.setId("panel_body");
 		
 		//login_Panel
 		login = this.initialLoginPane();
 		
 		//choose_Type
-		Label choose = new Label("ÇëÑ¡Ôñ²Ù×÷ÀàĞÍ£º");
+		Label choose = new Label("è¯·é€‰æ‹©æ“ä½œç±»å‹");
 		body.getChildren().add(choose);
 		choose.setLayoutX(-6.0);
 		choose.setLayoutY(14.0);
@@ -85,14 +85,14 @@ public class LogFrame extends Application {
 		type.setLayoutY(48.0);
 		type.prefHeight(23.0);
 		type.prefWidth(79.0);
-		type.setItems(FXCollections.observableArrayList("µÇÂ¼", "×¢²á"));
-		type.setValue("µÇÂ¼");
+		type.setItems(FXCollections.observableArrayList("ç™»å½•", "æ³¨å†Œ"));
+		type.setValue("ç™»å½•");
 		type.setOnAction(new EventHandler<ActionEvent>() {
 
 			@Override
 			public void handle(ActionEvent event) {
 				// TODO Auto-generated method stub
-				if(type.getValue().equals("×¢²á")){
+				if(type.getValue().equals("æ³¨å†Œ")){
 					root.getChildren().remove(login);
 					register = initialRegisterPane();
 					root.getChildren().add(register);
@@ -113,16 +113,16 @@ public class LogFrame extends Application {
 		rectSmall.setArcHeight(5.0);
 		rectSmall.setArcWidth(5.0);
 		rectSmall.setFill(Paint.valueOf("#eef2f5"));
-		rectSmall.setHeight(194.0);
-		rectSmall.setWidth(369.0);
+		rectSmall.setHeight(324.0);
+		rectSmall.setWidth(539.0);
 		rectSmall.setLayoutX(169.0);
-		rectSmall.setLayoutY(154.0);
+		rectSmall.setLayoutY(190.0);
 		rectSmall.setStrokeWidth(2.0);
 		rectSmall.setEffect(new DropShadow());
 		
 		root.getChildren().add(login);
 //		primaryStage.initStyle(StageStyle.DECORATED);
-		primaryStage.setTitle("»¶Ó­Ê¹ÓÃ¾Æµê¹ÜÀíÏµÍ³");
+		primaryStage.setTitle("æ¬¢è¿ä½¿ç”¨é…’åº—ç®¡ç†ç³»ç»Ÿ");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
@@ -131,15 +131,15 @@ public class LogFrame extends Application {
 		//login_Panel
 		Pane login = new Pane();
 		login.setLayoutX(173.0);
-		login.setLayoutY(158.0);
+		login.setLayoutY(208.0);
 		login.prefHeight(184.0);
 		login.prefWidth(361.0);
 		login.setId("panel_login");
 		
 		//label_Id
-		Label type = new Label("ÇëÑ¡ÔñÓÃ»§ÀàĞÍ£º");
+		Label type = new Label("è¯·é€‰æ‹©ç”¨æˆ·ç±»å‹");
 		login.getChildren().add(type);
-		type.setLayoutX(5.0);
+		type.setLayoutX(65.0);
 		type.setLayoutY(10.0);
 		type.setFont(new Font(14.0));
 		
@@ -147,53 +147,53 @@ public class LogFrame extends Application {
 		ChoiceBox <String> id = new ChoiceBox<>();
 		id.setCursor(Cursor.HAND);
 		login.getChildren().add(id);
-		id.setLayoutX(121.0);
+		id.setLayoutX(181.0);
 		id.setLayoutY(10.0);
 		id.prefHeight(23.0);
 		id.prefWidth(79.0);
-		id.setItems(FXCollections.observableArrayList("¿Í»§", "¾Æµê¹¤×÷ÈËÔ±", "ÍøÕ¾ÓªÏúÈËÔ±", "ÍøÕ¾¹ÜÀíÈËÔ±"));
-		id.setValue("¿Í»§");
+		id.setItems(FXCollections.observableArrayList("å®¢æˆ·", "é…’åº—å·¥ä½œäººå‘˜", "ç½‘ç«™è¥é”€äººå‘˜", "ç½‘ç«™ç®¡ç†äººå‘˜"));
+		id.setValue("å®¢æˆ·");
 		id.setEffect(new DropShadow());
 		id.setId("choicebox_id");
 		
 		//Label_Name
-		Label name = new Label("ÓÃ»§Ãû£º");
+		Label name = new Label("ç”¨æˆ·å");
 		login.getChildren().add(name);
-		name.setLayoutX(61.0);
+		name.setLayoutX(121.0);
 		name.setLayoutY(59.0);
 		name.setFont(new Font(14.0));
 		
 		//TextField_Name
 		TextField nameField = new TextField();
 		login.getChildren().add(nameField);
-		nameField.setLayoutX(121.0);
+		nameField.setLayoutX(181.0);
 		nameField.setLayoutY(57.0);
 		nameField.setCursor(Cursor.HAND);
 		nameField.setEffect(new DropShadow());
 		nameField.setId("input");
 		
 		//Label_Password
-		Label password = new Label("ÃÜÂë£º");
+		Label password = new Label("å¯†ç ");
 		login.getChildren().add(password);
-		password.setLayoutX(75.0);
+		password.setLayoutX(135.0);
 		password.setLayoutY(106.0);
 		password.setFont(new Font(14.0));
 		
 		//PasswordField_Password
 		PasswordField passwordField = new PasswordField();
 		login.getChildren().add(passwordField);
-		passwordField.setLayoutX(121.0);
+		passwordField.setLayoutX(181.0);
 		passwordField.setLayoutY(104.0);
 		passwordField.setCursor(Cursor.HAND);
 		passwordField.setEffect(new DropShadow());
 		passwordField.setId("input");
 		
 		//Button_login
-		Button loginButton = new Button("µÇÂ¼");
+		Button loginButton = new Button("ç™»å½•");
 		login.getChildren().add(loginButton);
 		loginButton.setMnemonicParsing(false);
-		loginButton.setLayoutX(137.0);
-		loginButton.setLayoutY(145.0);
+		loginButton.setLayoutX(207.0);
+		loginButton.setLayoutY(151.0);
 		loginButton.setPrefHeight(29.0);
 		loginButton.setPrefWidth(64.0);
 		loginButton.setFont(new Font(14.0));
@@ -206,11 +206,11 @@ public class LogFrame extends Application {
 			public void handle(ActionEvent event) {
 				// TODO Auto-generated method stub
 				String i = id.getValue();
-				if(i.equals("ÍøÕ¾¹ÜÀíÈËÔ±")){
+				if(i.equals("ç½‘ç«™ç®¡ç†äººå‘˜")){
 					new Manager_start().start(stage);
-				}else if(i.equals("ÍøÕ¾ÓªÏúÈËÔ±")){
+				}else if(i.equals("ç½‘ç«™è¥é”€äººå‘˜")){
 					new Saler_start().start(stage);
-				}else if(i.equals("¾Æµê¹¤×÷ÈËÔ±")){
+				}else if(i.equals("é…’åº—å·¥ä½œäººå‘˜")){
 					new Hotel_start().start(stage);
 				}else{
 					new User_start().start(stage);
@@ -225,15 +225,15 @@ public class LogFrame extends Application {
 		//register_Panel
 		Pane register = new Pane();
 		register.setLayoutX(173.0);
-		register.setLayoutY(158.0);
+		register.setLayoutY(208.0);
 		register.prefHeight(184.0);
 		register.prefWidth(361.0);
 		register.setId("panel_register");
 		
 		//label_Id
-		Label type = new Label("ÇëÑ¡ÔñÓÃ»§ÀàĞÍ£º");
+		Label type = new Label("è¯·é€‰æ‹©ç”¨æˆ·ç±»å‹");
 		register.getChildren().add(type);
-		type.setLayoutX(5.0);
+		type.setLayoutX(65.0);
 		type.setLayoutY(10.0);
 		type.setFont(new Font(14.0));
 		
@@ -241,69 +241,69 @@ public class LogFrame extends Application {
 		ChoiceBox <String> id = new ChoiceBox<>();
 		id.setCursor(Cursor.HAND);
 		register.getChildren().add(id);
-		id.setLayoutX(121.0);
+		id.setLayoutX(181.0);
 		id.setLayoutY(10.0);
 		id.prefHeight(23.0);
 		id.prefWidth(79.0);
-		id.setItems(FXCollections.observableArrayList("¿Í»§", "¾Æµê¹¤×÷ÈËÔ±", "ÍøÕ¾ÓªÏúÈËÔ±", "ÍøÕ¾¹ÜÀíÈËÔ±"));
-		id.setValue("¿Í»§");
+		id.setItems(FXCollections.observableArrayList("å®¢æˆ·", "é…’åº—å·¥ä½œäººå‘˜", "ç½‘ç«™è¥é”€äººå‘˜", "ç½‘ç«™ç®¡ç†äººå‘˜"));
+		id.setValue("å®¢æˆ·");
 		id.setEffect(new DropShadow());
 		id.setId("choicebox_id");
 		
 		//Label_Name
-		Label name = new Label("ÓÃ»§Ãû£º");
+		Label name = new Label("ç”¨æˆ·å");
 		register.getChildren().add(name);
-		name.setLayoutX(61.0);
-		name.setLayoutY(47.0);
+		name.setLayoutX(121.0);
+		name.setLayoutY(57.0);
 		name.setFont(new Font(14.0));
 		
 		//TextField_Name
 		TextField nameField = new TextField();
 		register.getChildren().add(nameField);
-		nameField.setLayoutX(121.0);
-		nameField.setLayoutY(45.0);
+		nameField.setLayoutX(181.0);
+		nameField.setLayoutY(57.0);
 		nameField.setCursor(Cursor.HAND);
 		nameField.setEffect(new DropShadow());
 		nameField.setId("input");
 		
 		//Label_Password
-		Label password = new Label("ÃÜÂë£º");
+		Label password = new Label("å¯†ç ");
 		register.getChildren().add(password);
-		password.setLayoutX(75.0);
-		password.setLayoutY(82.0);
+		password.setLayoutX(135.0);
+		password.setLayoutY(104.0);
 		password.setFont(new Font(14.0));
 		
 		//PasswordField_Password
 		PasswordField passwordField = new PasswordField();
 		register.getChildren().add(passwordField);
-		passwordField.setLayoutX(121.0);
-		passwordField.setLayoutY(80.0);
+		passwordField.setLayoutX(181.0);
+		passwordField.setLayoutY(103.0);
 		passwordField.setCursor(Cursor.HAND);
 		passwordField.setEffect(new DropShadow());
 		passwordField.setId("input");
 		
 		//Label_PasswordConfirm
-		Label passwordConfirm = new Label("ÃÜÂëÈ·ÈÏ£º");
+		Label passwordConfirm = new Label("å¯†ç ç¡®è®¤");
 		register.getChildren().add(passwordConfirm);
-		passwordConfirm.setLayoutX(47.0);
-		passwordConfirm.setLayoutY(116.0);
+		passwordConfirm.setLayoutX(107.0);
+		passwordConfirm.setLayoutY(151.0);
 		passwordConfirm.setFont(new Font(14.0));
 		
 		//PasswordField_PasswordConfirm
 		PasswordField passwordConfirmField = new PasswordField();
 		register.getChildren().add(passwordConfirmField);
-		passwordConfirmField.setLayoutX(121.0);
-		passwordConfirmField.setLayoutY(114.0);
+		passwordConfirmField.setLayoutX(181.0);
+		passwordConfirmField.setLayoutY(151.0);
 		passwordConfirmField.setCursor(Cursor.HAND);
 		passwordConfirmField.setEffect(new DropShadow());
 		passwordConfirmField.setId("input");
 		
-		//Button_login
-		Button registerButton = new Button("×¢²á");
+		//Button_register
+		Button registerButton = new Button("æ³¨å†Œ");
 		register.getChildren().add(registerButton);
 		registerButton.setMnemonicParsing(false);
-		registerButton.setLayoutX(137.0);
-		registerButton.setLayoutY(148.0);
+		registerButton.setLayoutX(207.0);
+		registerButton.setLayoutY(196.0);
 		registerButton.setPrefHeight(29.0);
 		registerButton.setPrefWidth(64.0);
 		registerButton.setFont(new Font(14.0));

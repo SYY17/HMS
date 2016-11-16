@@ -1,21 +1,9 @@
-/*
- *@(#)Test.java 2016Äê10ÔÂ23ÈÕ
- *
- *Copyright 2016 Zyz,All rights reserved.
- */
 package presentation.userui.manager;
-
-/**
- *
- *@author ÓîÖÝ
- */
-import java.io.File;
 
 import javax.swing.JOptionPane;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 public class Manager_controller {
@@ -24,7 +12,7 @@ public class Manager_controller {
 	
 	@FXML
 	private void onLogOut(ActionEvent event) {
-		JOptionPane.showMessageDialog(null, "ÄúÒÑÍË³ö", "¹ØÓÚ", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, "ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½", "ï¿½ï¿½ï¿½ï¿½", JOptionPane.PLAIN_MESSAGE);
 	}
 
 }

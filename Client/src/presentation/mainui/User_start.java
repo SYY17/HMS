@@ -11,11 +11,11 @@ public class User_start extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/user/UserUI.fxml"));
-			Scene scene = new Scene(root, 600, 400);
+			Scene scene = new Scene(root, 800, 600);
 			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			User_controller.stage = primaryStage;
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("客户主界面");
+			primaryStage.setTitle("瀹㈡埛");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

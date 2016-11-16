@@ -11,11 +11,11 @@ public class Saler_start extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/saler/SalerUI.fxml"));
-			Scene scene = new Scene(root, 600, 400);
+			Scene scene = new Scene(root, 800, 600);
 			 scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
 			Saler_controller.stage = primaryStage;
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("网站营销人员主界面");
+			primaryStage.setTitle("缃戠珯钀ラ攢浜哄憳");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

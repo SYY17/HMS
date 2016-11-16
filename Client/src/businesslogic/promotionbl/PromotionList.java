@@ -2,7 +2,8 @@ package businesslogic.promotionbl;
 
 import java.util.ArrayList;
 import java.util.Date;
-import po.PromotionPO;
+
+import vo.PromotionVO;
 
 public class PromotionList {
 	
@@ -51,7 +52,7 @@ public class PromotionList {
 	 * @param content
 	 * @return 按照内容查找营销策略
 	 */
-	public PromotionPO findPromotionLineItemByContent(int id, String content){
+	public PromotionVO findPromotionLineItemByContent(int id, String content){
 		PromotionLineItem promotionLineItem;
 		for(int i=0; i<list.size(); i++){
 			promotionLineItem = list.get(i);
@@ -68,7 +69,7 @@ public class PromotionList {
 	 * @param start
 	 * @return 按照起始时间查找营销策略
 	 */
-	public PromotionPO findPromotionLineItemByStartTime(int id, Date start){
+	public PromotionVO findPromotionLineItemByStartTime(int id, Date start){
 		PromotionLineItem promotionLineItem;
 		for(int i=0; i<list.size(); i++){
 			promotionLineItem = list.get(i);
@@ -84,11 +85,11 @@ public class PromotionList {
 	 * @param promotionLineItem
 	 * @return 将营销策略项转换为VO对象
 	 */
-	private PromotionPO converse(PromotionLineItem promotionLineItem){
+	private PromotionVO converse(PromotionLineItem promotionLineItem){
 		String ctt = promotionLineItem.getContent();
 		Date s = promotionLineItem.getStartTime();
 		int i = promotionLineItem.getID();
-		return new PromotionPO(ctt, s, i);
+		return new PromotionVO(ctt, s, i);
 	}
 	
 	/**
