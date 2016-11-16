@@ -3,24 +3,19 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.Pane?>
+<<<<<<< HEAD
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userui.user.Credit_controller">
    <children>
-      <Rectangle fill="#cfd6dd" height="375.0" layoutX="26.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="762.0">
-         <effect>
-            <DropShadow />
-         </effect></Rectangle>
-      <TableView layoutX="64.0" layoutY="207.0" prefHeight="309.0" prefWidth="673.0">
+      <Rectangle fill="#cfd6db" height="405.0" layoutX="55.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="697.0" />
+      <TableView layoutX="114.0" layoutY="226.0" prefHeight="223.0" prefWidth="555.0">
         <columns>
           <TableColumn prefWidth="108.0" text="时间" />
             <TableColumn prefWidth="274.0" text="增减历史" />
@@ -36,17 +31,17 @@
          <effect>
             <DropShadow />
          </effect></Button>
-      <Label layoutX="105.0" layoutY="174.0" text="信用历史">
+      <Label layoutX="127.0" layoutY="181.0" text="信用历史">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="105.0" layoutY="117.0" text="当前的信用是">
+      <Label layoutX="105.0" layoutY="118.0" text="当前的信用是">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <Slider layoutX="752.0" layoutY="201.0" orientation="VERTICAL" prefHeight="309.0" prefWidth="15.0" />
+      <Slider layoutX="676.0" layoutY="226.0" orientation="VERTICAL" prefHeight="223.0" prefWidth="15.0" />
       <Pane id="panel_top" prefHeight="80.0" prefWidth="800.0">
          <children>
             <Label id="default" layoutX="32.0" layoutY="28.0" text="欢迎您">
@@ -70,12 +65,46 @@
                </font>
             </Label>
             <Button id="logout" layoutX="157.0" layoutY="27.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
+=======
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="presentation.userui.user.Credit_controller">
+   <children>
+      <Pane id="panel_top" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Label id="default" layoutX="24.0" layoutY="18.0" text="欢迎您">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="81.0" layoutY="19.0" text="admin">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label id="default" layoutX="459.0" layoutY="18.0" text="日期">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="501.0" layoutY="19.0" text="2016-10-10">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="132.0" layoutY="12.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+>>>>>>> origin/master
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <effect>
                   <DropShadow />
                </effect>
+<<<<<<< HEAD
                <font>
                   <Font name="System Bold" size="10.0" />
                </font>
@@ -83,41 +112,36 @@
             <Label layoutX="337.0" layoutY="25.0" text="酒店管理系统">
                <font>
                   <Font name="System Bold" size="18.0" />
+=======
+            </Button>
+            <Label layoutX="252.0" layoutY="17.0" text="酒店管理系统">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+>>>>>>> origin/master
                </font>
             </Label>
          </children>
       </Pane>
-      <MenuBar layoutX="5.0" layoutY="80.0" prefHeight="25.0" prefWidth="790.0">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <effect>
-            <DropShadow />
-         </effect>
-         <menus>
-            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="订单浏览" />
-                  <MenuItem mnemonicParsing="false" text="订单执行" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信息管理(I)">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="酒店信息" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="历史记录(H)">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="营销策略浏览" />
-                  <MenuItem mnemonicParsing="false" text="营销策略制定" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="关于" />
-               </items>
-            </Menu>
-         </menus>
-      </MenuBar>
+<<<<<<< HEAD
+=======
+      <TableView layoutX="126.0" layoutY="161.0" prefHeight="163.0" prefWidth="383.0">
+        <columns>
+          <TableColumn prefWidth="108.0" text="时间" />
+            <TableColumn prefWidth="274.0" text="增减历史" />
+        </columns>
+      </TableView>
+      <Button layoutX="498.0" layoutY="346.0" mnemonicParsing="false" onAction="#onBack" text="返回" />
+      <Label layoutX="126.0" layoutY="136.0" text="信用历史">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="96.0" text="当前的信用是">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Slider layoutX="512.0" layoutY="161.0" orientation="VERTICAL" prefHeight="163.0" prefWidth="15.0" />
+>>>>>>> origin/master
    </children>
 </Pane>
