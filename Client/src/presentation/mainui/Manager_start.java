@@ -11,11 +11,11 @@ public class Manager_start extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/manager/ManagerUI.fxml"));
-			Scene scene = new Scene(root, 600, 400);
+			Scene scene = new Scene(root, 800, 600);
 			 scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
 			Manager_controller.stage = primaryStage;
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("网站管理人员主界面");
+			primaryStage.setTitle("缃戠珯绠＄悊浜哄憳");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

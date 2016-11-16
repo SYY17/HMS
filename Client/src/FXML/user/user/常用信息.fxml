@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<<<<<<< HEAD
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -106,12 +107,50 @@
                </font>
             </Label>
             <Button id="logout" layoutX="157.0" layoutY="27.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
+=======
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="presentation.userui.user.DetailedInformation_controller">
+   <children>
+      <Pane id="panel_top" prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Label id="default" layoutX="24.0" layoutY="18.0" text="欢迎您">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="81.0" layoutY="19.0" text="admin">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label id="default" layoutX="459.0" layoutY="18.0" text="日期">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label id="info" layoutX="501.0" layoutY="19.0" text="2016-10-10">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="132.0" layoutY="12.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+>>>>>>> origin/master
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <effect>
                   <DropShadow />
                </effect>
+<<<<<<< HEAD
                <font>
                   <Font name="System Bold" size="10.0" />
                </font>
@@ -119,10 +158,17 @@
             <Label layoutX="337.0" layoutY="25.0" text="酒店管理系统">
                <font>
                   <Font name="System Bold" size="18.0" />
+=======
+            </Button>
+            <Label layoutX="252.0" layoutY="17.0" text="酒店管理系统">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+>>>>>>> origin/master
                </font>
             </Label>
          </children>
       </Pane>
+<<<<<<< HEAD
       <MenuBar layoutX="5.0" layoutY="80.0" prefHeight="25.0" prefWidth="790.0">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -155,5 +201,28 @@
             </Menu>
          </menus>
       </MenuBar>
+=======
+      <Button layoutX="61.0" layoutY="349.0" mnemonicParsing="false" onAction="#onEdit" text="编辑" />
+      <Button layoutX="288.0" layoutY="349.0" mnemonicParsing="false" onAction="#onSubmit" text="提交" />
+      <Button layoutX="507.0" layoutY="349.0" mnemonicParsing="false" onAction="#onBack" text="返回" />
+      <Label layoutX="66.0" layoutY="76.0" text="用户名" />
+      <Label layoutX="70.0" layoutY="209.0" text="手机" />
+      <Label layoutX="70.0" layoutY="124.0" text="密码" />
+      <Label layoutX="57.0" layoutY="168.0" text="确认密码" />
+      <Label layoutX="70.0" layoutY="256.0" text="邮箱" />
+      <Label layoutX="369.0" layoutY="76.0" text="生日" />
+      <Label layoutX="356.0" layoutY="124.0" text="常用住址" />
+      <Label layoutX="356.0" layoutY="168.0" text="默认问题" />
+      <Label layoutX="369.0" layoutY="209.0" text="答案" />
+      <TextField layoutX="121.0" layoutY="71.0" />
+      <TextField layoutX="121.0" layoutY="119.0" />
+      <TextField layoutX="121.0" layoutY="163.0" />
+      <TextField layoutX="121.0" layoutY="204.0" />
+      <TextField layoutX="121.0" layoutY="251.0" />
+      <TextField layoutX="419.0" layoutY="119.0" />
+      <TextField layoutX="419.0" layoutY="204.0" />
+      <ChoiceBox layoutX="419.0" layoutY="163.0" prefHeight="27.0" prefWidth="167.0" />
+      <DatePicker layoutX="417.0" layoutY="71.0" prefHeight="27.0" prefWidth="167.0" />
+>>>>>>> origin/master
    </children>
 </Pane>

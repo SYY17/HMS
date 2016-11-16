@@ -16,7 +16,7 @@ public class Manager_start extends Application {
 			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.initStyle(StageStyle.DECORATED);
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("网站管理人员主界面");
+			primaryStage.setTitle("缃戠珯绠＄悊浜哄憳");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
