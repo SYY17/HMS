@@ -6,7 +6,7 @@ import po.OrderPO;
 
 public class OrderDatabaseServiceMySqlImpl_Driver {
 	public void drive(OrderDataService orderDatabaseService) throws RemoteException {
-		OrderPO opo = new OrderPO(0, null, null, null, 0, 0, null);
+		OrderPO opo = new OrderPO(0, null, 0, 0, null, null, null, 0, 0, null);
 		orderDatabaseService.init();
 		orderDatabaseService.finish();
 		orderDatabaseService.delete(opo);

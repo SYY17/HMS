@@ -3,9 +3,13 @@ package businesslogic.orderbl;
 import java.util.ArrayList;
 import java.util.Date;
 
+import vo.OrderStatus;
 import vo.RoomVO;
 
 public class OrderLineItem{
+	int orderID;
+	OrderStatus orderStatus;
+	int price;
 	int userID;
 	Date setTime;
 	Date checkIn;
@@ -15,7 +19,10 @@ public class OrderLineItem{
 	ArrayList<RoomVO> rooms;
 
 	
-	public OrderLineItem(int i,Date s,Date ci,Date co,int rn,int hID,ArrayList<RoomVO> rt){
+	public OrderLineItem(int orderid, OrderStatus orderstatus, int pr,int i,Date s,Date ci,Date co,int rn,int hID,ArrayList<RoomVO> rt){
+		orderID = orderid;
+		orderStatus = orderstatus;
+		price = pr;
 		userID=i;
 		setTime=s;
 		checkIn=ci;
@@ -23,6 +30,30 @@ public class OrderLineItem{
 		roomNumber=rn;
 		hotelID=hID;
 		rooms=rt;
+	}
+	
+	/**
+	 * 
+	 * @return 获得订单对应订单ID
+	 */
+	public int getOrderID() {
+		return orderID;
+	}
+	
+	/**
+	 * 
+	 * @return 获得订单对应订单状态
+	 */
+	public OrderStatus getOrderStatus() {
+		return orderStatus;
+	}
+	
+	/**
+	 * 
+	 * @return 获得订单对应价格
+	 */
+	public int getPrice() {
+		return price;
 	}
 	
 	/**

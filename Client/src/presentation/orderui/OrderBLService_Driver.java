@@ -6,6 +6,7 @@ import java.util.Date;
 import businesslogicservice.ResultMessage;
 import businesslogicservice.orderblservice.OrderBLService;
 import vo.HotelVO;
+import vo.OrderStatus;
 import vo.OrderVO;
 import vo.PromotionVO;
 import vo.RoomVO;
@@ -13,6 +14,9 @@ import vo.RoomVO;
 public class OrderBLService_Driver {
 
 	public void drive(OrderBLService orderBLService) {
+		int orderID = 0;
+		OrderStatus orderStatus = null;
+		int price = 0;
 		int userID=0;
 		Date setTime=null;
 		Date checkIn=null;
@@ -20,7 +24,7 @@ public class OrderBLService_Driver {
 		int roomNumber=0;
 		int hotelID=0;
 		ArrayList<RoomVO> rooms=null;
-		OrderVO ovo=new OrderVO(userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
+		OrderVO ovo=new OrderVO(orderID, orderStatus, price, userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
 		HotelVO hvo=new HotelVO(userID, null, null, null, null, roomNumber, 0, null, hotelID);
 		PromotionVO pvo=new PromotionVO(null, null, 0);
 		

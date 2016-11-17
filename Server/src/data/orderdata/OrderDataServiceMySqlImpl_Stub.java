@@ -45,7 +45,7 @@ public class OrderDataServiceMySqlImpl_Stub implements OrderDataService{
 	@Override
 	public OrderPO find(int id)  throws RemoteException {
 		System.out.println("find Succeed!");
-		OrderPO opo=new OrderPO(id, null, null, null, id, id, null);
+		OrderPO opo=new OrderPO(id, null, id, id, null, null, null, id, id, null);
 		return opo;
 	}
 

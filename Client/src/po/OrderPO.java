@@ -1,11 +1,16 @@
 package po;
 import java.io.*;
 import java.util.*;
+
+import vo.OrderStatus;
 public class OrderPO implements Serializable{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	int orderID;
+	OrderStatus orderStatus;
+	int price;
 	int userID;
 	Date setTime;
 	Date checkIn;
@@ -15,7 +20,10 @@ public class OrderPO implements Serializable{
 	ArrayList<RoomPO> rooms;
 
 	
-	public OrderPO(int i,Date s,Date ci,Date co,int rn,int hID,ArrayList<RoomPO> rt){
+	public OrderPO(int orderid, OrderStatus orderstatus, int pr, int i,Date s,Date ci,Date co,int rn,int hID,ArrayList<RoomPO> rt){
+		orderID = orderid;
+		orderStatus = orderstatus;
+		price = pr;
 		userID=i;
 		setTime=s;
 		checkIn=ci;
