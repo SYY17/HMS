@@ -15,7 +15,7 @@ public class Saler_start extends Application {
 			 scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
 			Saler_controller.stage = primaryStage;
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("网站营销人员");
+			primaryStage.setTitle("酒店管理系统");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

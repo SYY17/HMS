@@ -9,6 +9,7 @@ public class HotelVO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	int hotelID;
 	String hotelName;
+//	String hotelWorkerName;
 	String hotelAddress;
 	String businessArea;
 	String hotelDescription;
@@ -16,6 +17,7 @@ public class HotelVO implements Serializable{
 	int roomNumber;
 	ArrayList<RoomVO> wholeRooms; 
 	int rating;
+//	double phoneNumber;
 	
 	public HotelVO(int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r){
 		hotelID=hid;

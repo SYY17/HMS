@@ -8,7 +8,10 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane id="panel_manager" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.orderui.ManageAbnormalOrder2_controller">
+<Pane id="panel_manager" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+	prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="presentation.orderui.ManageAbnormalOrder2_controller">
 	<children>
 		<Pane id="panel_top" prefHeight="80.0" prefWidth="800.0">
 			<children>
@@ -32,7 +35,8 @@
 						<Font size="15.0" />
 					</font>
 				</Label>
-				<Button id="logout" layoutX="157.0" layoutY="27.0" mnemonicParsing="false" onAction="#onLogout" text="注销">
+				<Button id="logout" layoutX="157.0" layoutY="27.0"
+					mnemonicParsing="false" onAction="#onLogout" text="注销">
 					<cursor>
 						<Cursor fx:constant="HAND" />
 					</cursor>
@@ -50,7 +54,8 @@
 				</Label>
 			</children>
 		</Pane>
-		<Pane id="panel_body" layoutY="80.0" prefHeight="445.0" prefWidth="800.0">
+		<Pane id="panel_body" layoutY="80.0" prefHeight="445.0"
+			prefWidth="800.0">
 			<children>
 				<MenuBar layoutX="5.0" prefHeight="25.0" prefWidth="790.0">
 					<cursor>
@@ -60,29 +65,38 @@
 						<DropShadow />
 					</effect>
 					<menus>
-						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)" />
-						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信用管理(C)" />
-						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="营销策略(P)">
+						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;"
+							text="订单管理(O)" />
+						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;"
+							text="信用管理(C)" />
+						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;"
+							text="营销策略(P)">
 							<items>
 								<MenuItem mnemonicParsing="false" text="营销策略浏览" />
 								<MenuItem mnemonicParsing="false" text="营销策略制定" />
 							</items>
 						</Menu>
-						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">
+						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;"
+							text="帮助(H)">
 							<items>
 								<MenuItem mnemonicParsing="false" text="关于" />
 							</items>
 						</Menu>
 					</menus>
 				</MenuBar>
-				<Pane id="panel_promotion" layoutX="5.0" layoutY="46.0" prefHeight="464.0" prefWidth="394.0">
+				<Pane id="panel_promotion" layoutX="5.0" layoutY="46.0"
+					prefHeight="464.0" prefWidth="394.0">
 					<children>
-						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfd6dd" height="429.0" layoutY="-9.0" stroke="#cfd6dd" strokeType="INSIDE" strokeWidth="2.0" width="375.0">
+						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfd6dd"
+							height="429.0" layoutY="-9.0" stroke="#cfd6dd" strokeType="INSIDE"
+							strokeWidth="2.0" width="375.0">
 							<effect>
 								<DropShadow />
 							</effect>
 						</Rectangle>
-						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7f8f8" height="379.0" layoutX="6.0" layoutY="25.0" stroke="#cfd6dd" strokeType="INSIDE" strokeWidth="2.0" width="361.0">
+						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7f8f8"
+							height="379.0" layoutX="6.0" layoutY="25.0" stroke="#cfd6dd"
+							strokeType="INSIDE" strokeWidth="2.0" width="361.0">
 							<effect>
 								<DropShadow />
 							</effect>
@@ -118,9 +132,12 @@
 						<Label layoutX="58.0" layoutY="323.0" text="邮箱：" />
 					</children>
 				</Pane>
-				<Pane id="panel_order" layoutX="401.0" layoutY="46.0" prefHeight="300.0" prefWidth="394.0">
+				<Pane id="panel_order" layoutX="401.0" layoutY="46.0"
+					prefHeight="300.0" prefWidth="394.0">
 					<children>
-						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfd6dd" height="429.0" layoutX="-9.0" layoutY="-9.0" stroke="#cfd6dd" strokeType="INSIDE" strokeWidth="2.0" width="403.0">
+						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfd6dd"
+							height="429.0" layoutX="-9.0" layoutY="-9.0" stroke="#cfd6dd"
+							strokeType="INSIDE" strokeWidth="2.0" width="403.0">
 							<effect>
 								<DropShadow />
 							</effect>
@@ -130,12 +147,20 @@
 								<Font name="System Bold" size="14.0" />
 							</font>
 						</Label>
-						<TableView id="table" layoutX="-2.0" layoutY="25.0" prefHeight="379.0" prefWidth="390.0">
+						<TableView id="table" layoutX="-2.0" layoutY="25.0"
+							prefHeight="379.0" prefWidth="390.0">
 							<columns>
-								<TableColumn id="col_odd" editable="false" maxWidth="80.0" minWidth="80.0" resizable="false" sortable="false" text="编号" />
-								<TableColumn id="col_even" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" sortable="false" text="用户名" />
-								<TableColumn id="col_odd" editable="false" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" resizable="false" sortable="false" text="时间" />
-								<TableColumn id="col_even" editable="false" maxWidth="80.0" minWidth="80.0" resizable="false" sortable="false" text="操作" />
+								<TableColumn id="col_odd" editable="false" maxWidth="80.0"
+									minWidth="80.0" resizable="false" sortable="false" text="编号" />
+								<TableColumn id="col_even" editable="false"
+									maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false"
+									sortable="false" text="用户名" />
+								<TableColumn id="col_odd" editable="false" maxWidth="130.0"
+									minWidth="130.0" prefWidth="130.0" resizable="false" sortable="false"
+									text="时间" />
+								<TableColumn id="col_even" editable="false"
+									maxWidth="80.0" minWidth="80.0" resizable="false" sortable="false"
+									text="操作" />
 							</columns>
 							<effect>
 								<DropShadow />
@@ -145,7 +170,8 @@
 				</Pane>
 			</children>
 		</Pane>
-		<Button id="return" layoutX="720.0" layoutY="556.0" mnemonicParsing="false" onAction="#onReturn" prefHeight="30.0" prefWidth="60.0" text="返回">
+		<Button layoutX="720.0" layoutY="556.0" mnemonicParsing="false"
+			prefHeight="30.0" prefWidth="60.0" text="返回">
 			<effect>
 				<DropShadow />
 			</effect>

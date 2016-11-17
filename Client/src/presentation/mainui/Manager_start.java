@@ -15,7 +15,7 @@ public class Manager_start extends Application {
 			 scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
 			Manager_controller.stage = primaryStage;
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("网站管理人员");
+			primaryStage.setTitle("酒店管理系统");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

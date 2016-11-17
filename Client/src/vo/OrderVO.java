@@ -6,6 +6,9 @@ public class OrderVO implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+//	int orderID;
+//	OrderStatus orderStatus;
+//	int price;
 	int userID;
 	Date setTime;
 	Date checkIn;

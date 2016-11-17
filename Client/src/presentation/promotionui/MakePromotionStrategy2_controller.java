@@ -15,9 +15,4 @@ public class MakePromotionStrategy2_controller {
 	private void onLogout(ActionEvent event) throws IOException {
 		new LogFrame().start(stage);
 	}
-	
-	@FXML
-	private void onReturn(ActionEvent event) throws Exception {
-		new MakePromotionStrategy1_start().start(stage);
-	}
 }

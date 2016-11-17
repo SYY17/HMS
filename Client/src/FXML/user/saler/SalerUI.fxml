@@ -61,11 +61,13 @@
                </effect>
                <menus>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)" />
-                  <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信用管理(C)" />
+                  <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信用管理(C)">
+                     <items>
+                        <MenuItem id="credit_manage" mnemonicParsing="false" onAction="#onCreditManage" text="信用值管理" />
+                     </items></Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="营销策略(P)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="营销策略浏览" />
-                        <MenuItem mnemonicParsing="false" text="营销策略制定" />
+                        <MenuItem id="promotion_manage" mnemonicParsing="false" onAction="#onPromotionManage" text="营销策略管理" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">
