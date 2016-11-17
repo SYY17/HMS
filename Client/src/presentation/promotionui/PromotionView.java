@@ -7,6 +7,6 @@ import businesslogicservice.promotionblservice.PromotionBLService;
 public class PromotionView {
 	
 	public void stubTest(){
-		PromotionBLService promotionBL = new PromotionBLService_Stub("к╚й╝р╩╟кушсе╩щ", new Date(20161111), 2233945);
+		PromotionBLService promotionBL = new PromotionBLService_Stub("Е▐▄Е█│Д╦─Е┘╚Ф┼≤Д╪≤Ф┐═", new Date(20161111), 2233945);
 	}
 }
