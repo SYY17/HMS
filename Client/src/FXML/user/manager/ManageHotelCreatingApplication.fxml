@@ -63,12 +63,12 @@
 					<menus>
 						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="用户管理(U)">
 							<items>
-								<MenuItem mnemonicParsing="false" text="用户浏览" />
+								<MenuItem id="manageSystemUser" mnemonicParsing="false" onAction="#onManageSystemUser" text="用户浏览" />
 							</items>
 						</Menu>
 						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="申请查看(A)">
 							<items>
-								<MenuItem mnemonicParsing="false" text="申请浏览" />
+								<MenuItem id="manageHotelCreatingApplication" mnemonicParsing="false" onAction="#onManageHotelCreatingApplication" text="申请浏览" />
 							</items>
 						</Menu>
 						<Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">

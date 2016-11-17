@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import presentation.loginui.LogFrame;
 import presentation.mainui.Manager_start;
+import presentation.userui.ManageSystemUser_start;
 
 public class ManageHotelCreatingApplication_controller {
 
@@ -20,5 +21,16 @@ public class ManageHotelCreatingApplication_controller {
 	@FXML
 	private void onReturn(ActionEvent event) throws Exception {
 		new Manager_start().start(stage);
+	}
+	
+
+	@FXML
+	private void onManageSystemUser(ActionEvent event) throws Exception {
+		new ManageSystemUser_start().start(stage);
+	}
+	
+	@FXML
+	private void onManageHotelCreatingApplication(ActionEvent event) throws Exception {
+		new ManageHotelCreatingApplication_start().start(stage);
 	}
 }
