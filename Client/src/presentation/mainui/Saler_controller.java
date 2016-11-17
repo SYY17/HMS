@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import presentation.creditui.ManageUserCredit1_start;
 import presentation.loginui.LogFrame;
+import presentation.orderui.ManageAbnormalOrder1_start;
 import presentation.promotionui.MakePromotionStrategy1_start;
 
 public class Saler_controller {
@@ -25,6 +26,11 @@ public class Saler_controller {
 	@FXML
 	private void onCreditManage(ActionEvent event) throws Exception {
 		new ManageUserCredit1_start().start(stage);
+	}
+	
+	@FXML
+	private void onOrderManage(ActionEvent event) throws Exception {
+		new ManageAbnormalOrder1_start().start(stage);
 	}
 
 }
