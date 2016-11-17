@@ -39,7 +39,7 @@ public class OrderBLServiceTest {
 		hotelID = 00000000;
 		orderList = null;
 		orderVO = new OrderVO(userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
-		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID);
+		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID, null, null);
 		promotionVO = new PromotionVO("双十一下订单八折优惠", new Date(System.currentTimeMillis()), 20920010);
 	}
 	
