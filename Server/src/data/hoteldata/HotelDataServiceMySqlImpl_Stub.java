@@ -49,7 +49,7 @@ public class HotelDataServiceMySqlImpl_Stub implements HotelDataService{
 	@Override
 	public HotelPO find(String name) throws RemoteException {
 		// TODO Auto-generated method stub
-		HotelPO hotel = new HotelPO(0, name, null, null, null, 0, 0, null, 0);
+		HotelPO hotel = new HotelPO(0, name, null, null, null, 0, 0, null, 0, null, null);
 		return hotel;
 	}
 
