@@ -15,6 +15,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< Updated upstream
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Rectangle fill="#cfd6dd" height="425.0" layoutX="29.0" layoutY="118.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="743.0" />
@@ -26,6 +27,26 @@
             <Cursor fx:constant="HAND" />
          </cursor></Button>
       <Button layoutX="417.0" layoutY="556.0" mnemonicParsing="false" text="提交">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userui.user.DetailedInfomation_controller">
+   <children>
+      <Rectangle fill="#cfd6dd" height="431.0" layoutX="21.0" layoutY="117.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="757.0" />
+      <Button id="edit" layoutX="309.0" layoutY="556.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="30.0" prefWidth="60.0" text="编辑">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button id="submit" layoutX="417.0" layoutY="556.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="30.0" prefWidth="60.0" text="提交">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button id="back" layoutX="730.0" layoutY="556.0" mnemonicParsing="false" onAction="#onBack" prefHeight="30.0" prefWidth="60.0" text="返回">
+>>>>>>> Stashed changes
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -168,7 +189,10 @@ fx:controller="presentation.userui.user.DetailedInformation_controller">
             </Label>
          </children>
       </Pane>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
       <MenuBar layoutX="5.0" layoutY="80.0" prefHeight="25.0" prefWidth="790.0">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -179,19 +203,18 @@ fx:controller="presentation.userui.user.DetailedInformation_controller">
          <menus>
             <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)">
                <items>
-                  <MenuItem mnemonicParsing="false" text="订单浏览" />
-                  <MenuItem mnemonicParsing="false" text="订单执行" />
+                  <MenuItem id="showOrder" mnemonicParsing="false" onAction="#onShowOrder" text="订单浏览" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信息管理(I)">
                <items>
-                  <MenuItem mnemonicParsing="false" text="酒店信息" />
+                  <MenuItem id="DetailedInfo" mnemonicParsing="false" onAction="#onDetailedInfo" text="用户信息" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="历史记录(H)">
                <items>
-                  <MenuItem mnemonicParsing="false" text="营销策略浏览" />
-                  <MenuItem mnemonicParsing="false" text="营销策略制定" />
+                  <MenuItem mnemonicParsing="false" text="历史订单" />
+                  <MenuItem mnemonicParsing="false" text="评价记录" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">

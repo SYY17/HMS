@@ -5,25 +5,35 @@ public class RoomVO implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-//	int hotelID;
+	int hotelID;//....................................................
 	RoomType roomtype;
-	boolean isAvailable;//delete
-//	int totalSum;
-//	int remainSum;
+	//boolean isAvailable;//delete.......................................
+	int totalSum;//.....................................................
+	int remainSum;//.......................................................
 	int price;
 	
-	public RoomVO(RoomType rt,boolean ia,int p){
+	public RoomVO(int hid,RoomType rt,int ts,int rs,int p){
+		hotelID=hid;
 		roomtype=rt;
-		isAvailable=ia;
+		totalSum=ts;
+		remainSum=rs;
 		price=p;
+	}
+	
+	public int getHotelID(){
+		return hotelID;
 	}
 	
 	public RoomType getRoomType(){
 		return roomtype;
 	}
 	
-	public boolean getState(){
-		return isAvailable;
+	public int getTotalSum(){
+		return totalSum;
+	}
+	
+	public int getRemainSum(){
+		return remainSum;
 	}
 	
 	public int getPrice(){

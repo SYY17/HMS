@@ -13,10 +13,11 @@ public class Credit_start extends Application{
 	public void start(Stage primaryStage){
 		// TODO Auto-generated method stub
 		try {
-			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/user/优惠券.fxml"));
+			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/user/信用.fxml"));
 			Scene scene = new Scene(root, 800, 600);
+			Credit_controller.stage=primaryStage;
 			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.initStyle(StageStyle.DECORATED);
+			//primaryStage.initStyle(StageStyle.DECORATED);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("酒店管理系统");
 			primaryStage.show();

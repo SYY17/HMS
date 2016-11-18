@@ -66,7 +66,9 @@ public class HotelBLServiceTest {
 		list2 = hotelBLService.searchRoom(type);
 		assertEquals(h1.getRooms().get(0).getPrice(), list2.get(0).getPrice());
 		assertEquals(h1.getRooms().get(0).getRoomType(), list2.get(0).getRoomType());
-		assertEquals(h1.getRooms().get(0).getState(), list2.get(0).getState());
+		assertEquals(h1.getRooms().get(0).getHotelID(), list2.get(0).getHotelID());//
+		assertEquals(h1.getRooms().get(0).getTotalSum(), list2.get(0).getTotalSum());//
+		assertEquals(h1.getRooms().get(0).getRemainSum(), list2.get(0).getRemainSum());//
 	}
 	
 	/**

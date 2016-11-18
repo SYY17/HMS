@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+/FXML/
+>>>>>>> Stashed changes
 /businesslogic/
 /businesslogicservice/
 /businesslogictest/
@@ -5,3 +9,7 @@
 /po/
 /presentation/
 /vo/
+<<<<<<< Updated upstream
+=======
+/.DS_Store
+>>>>>>> Stashed changes

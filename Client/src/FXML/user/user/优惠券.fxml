@@ -184,9 +184,43 @@ fx:controller="presentation.userui.user.Tokens_controller">
             </Label>
          </children>
       </Pane>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
       <Slider layoutX="504.0" layoutY="137.0" orientation="VERTICAL" prefHeight="194.0" prefWidth="15.0" />
 >>>>>>> origin/master
+=======
+      <MenuBar layoutX="5.0" layoutY="80.0" prefHeight="25.0" prefWidth="790.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <menus>
+            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)">
+               <items>
+                  <MenuItem id="showOrder" mnemonicParsing="false" onAction="#onShowOrder" text="订单浏览" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信息管理(I)">
+               <items>
+                  <MenuItem id="DetailedInfo" mnemonicParsing="false" onAction="#onDetailedInfo" text="用户信息" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="历史记录(H)">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="历史订单" />
+                  <MenuItem mnemonicParsing="false" text="评价记录" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="关于" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+>>>>>>> Stashed changes
    </children>
 </Pane>

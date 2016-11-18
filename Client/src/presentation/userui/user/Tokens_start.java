@@ -15,8 +15,9 @@ public class Tokens_start extends Application{
 		try {
 			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/user/优惠券.fxml"));
 			Scene scene = new Scene(root, 800, 600);
+			Tokens_controller.stage=primaryStage;
 			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.initStyle(StageStyle.DECORATED);
+			//primaryStage.initStyle(StageStyle.DECORATED);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("酒店管理系统");
 			primaryStage.show();
