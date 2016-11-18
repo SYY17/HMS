@@ -2,12 +2,11 @@ package presentation.userui.user;
 
 import java.io.IOException;
 
-import javax.swing.JOptionPane;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import presentation.loginui.LogFrame;
+import presentation.mainui.User_start;
 
 public class HotelInformation_controller {
 	
@@ -30,7 +29,7 @@ public class HotelInformation_controller {
 	
 	@FXML
 	private void onDetailedInfo(ActionEvent event) {
-		new DetailedInfomation_start().start(stage);
+		new DetailedInformation_start().start(stage);
 	}
 
 }

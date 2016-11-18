@@ -17,15 +17,15 @@ public class OrderBLService_Driver {
 		int orderID = 0;
 		OrderStatus orderStatus = null;
 		int price = 0;
-		int userID=0;
-		Date setTime=null;
-		Date checkIn=null;
-		Date checkOut=null;
-		int roomNumber=0;
-		int hotelID=0;
+		int userID = 0;
+		Date setTime = null;
+		Date checkIn = null;
+		Date checkOut = null;
+		int roomNumber = 0;
+		int hotelID = 0;
 		ArrayList<RoomVO> rooms=null;
 		OrderVO ovo=new OrderVO(orderID, orderStatus, price, userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
-		HotelVO hvo=new HotelVO(userID, null, null, null, null, roomNumber, 0, null, hotelID);
+		HotelVO hvo=new HotelVO(userID, null, null, null, null, roomNumber, 0, null, hotelID, null, null);
 		PromotionVO pvo=new PromotionVO(null, null, 0);
 		
 		ArrayList<OrderVO> list=orderBLService.reviewOrder(userID);

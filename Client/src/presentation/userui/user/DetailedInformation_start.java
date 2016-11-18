@@ -6,15 +6,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class OrderAndRating_start extends Application{
+public class DetailedInformation_start extends Application{
 
 	@Override
 	public void start(Stage primaryStage){
 		// TODO Auto-generated method stub
 		try {
-			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/user/订单＋酒店评分.fxml"));
+			Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FXML/user/user/常用信息.fxml"));
 			Scene scene = new Scene(root, 800, 600);
-			OrderAndRating_controller.stage=primaryStage;
+			DetailedInformation_controller.stage=primaryStage;
 			// scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			//primaryStage.initStyle(StageStyle.DECORATED);
 			primaryStage.setScene(scene);

@@ -28,7 +28,7 @@
          </cursor></Button>
       <Button layoutX="417.0" layoutY="556.0" mnemonicParsing="false" text="提交">
 =======
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userui.user.DetailedInfomation_controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userui.user.DetailedInformation_controller">
    <children>
       <Rectangle fill="#cfd6dd" height="431.0" layoutX="21.0" layoutY="117.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="757.0" />
       <Button id="edit" layoutX="309.0" layoutY="556.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="30.0" prefWidth="60.0" text="编辑">

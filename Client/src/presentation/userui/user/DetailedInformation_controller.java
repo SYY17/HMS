@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import presentation.loginui.LogFrame;
 import presentation.mainui.User_start;
 
-public class AllOrder_controller {
+public class DetailedInformation_controller {
 	
 	public static Stage stage;
 
@@ -32,5 +32,16 @@ public class AllOrder_controller {
 	private void onDetailedInfo(ActionEvent event) {
 		new DetailedInformation_start().start(stage);
 	}
-
+	
+	@FXML
+	private void onEdit(ActionEvent event) {
+		new User_start().start(stage);
+		//JOptionPane.showMessageDialog(null, "�����˳�", "����", JOptionPane.PLAIN_MESSAGE);
+	}
+	
+	@FXML
+	private void onSubmit(ActionEvent event) {
+		new User_start().start(stage);
+		//JOptionPane.showMessageDialog(null, "�����˳�", "����", JOptionPane.PLAIN_MESSAGE);
+	}
 }

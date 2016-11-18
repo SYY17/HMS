@@ -49,7 +49,7 @@ public class CreditBLServiceTest {
 		CreditVO cvo;
 		cvo = creditBLService.getCredit(10926001);
 		assertEquals(c1.getCredit(), cvo.getCredit());
-		assertEquals(c1.getId(), cvo.getId());
+		assertEquals(c1.getID(), cvo.getID());
 	}
 	
 	/**

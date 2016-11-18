@@ -30,7 +30,7 @@ public interface UserDataService {
 	/**
 	 * 
 	 * @param id
-	 * @return 根据ID查找并获得用户信息
+	 * @return 根据ID查找并返回用户信息
 	 * @throws RemoteException
 	 */
 	public UserPO find(int id) throws RemoteException;

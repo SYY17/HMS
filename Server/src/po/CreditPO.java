@@ -19,7 +19,7 @@ public class CreditPO implements Serializable{
 	 * 
 	 * @return 获得信用值对应用户ID
 	 */
-	public int getId(){
+	public int getID(){
 		return id;
 	}
 	

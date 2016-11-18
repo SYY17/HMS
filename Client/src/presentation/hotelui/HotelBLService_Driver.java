@@ -13,7 +13,7 @@ public class HotelBLService_Driver {
 		String type = null;
 		ArrayList<RoomVO> rs = new ArrayList<RoomVO>();
 		
-		HotelVO hvo = new HotelVO(0, null, null, null, null, 0, 0, rs, 0);
+		HotelVO hvo = new HotelVO(0, null, null, null, null, 0, 0, rs, 0, null, null);
 		ResultMessage result = hotelBLService.createHotel(hvo);
 		if(result == ResultMessage.TRUE) System.out.println("Hotel created!");
 		result = hotelBLService.deleteHotel(hvo);

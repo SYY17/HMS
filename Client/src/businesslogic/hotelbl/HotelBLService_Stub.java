@@ -19,6 +19,8 @@ public class HotelBLService_Stub implements HotelBLService{
 	int roomNumber;
 	ArrayList<RoomVO> wholeRooms;
 	int rating;
+	String staffName;
+	String phoneNumber;
 	MockPromotion mockPromorion;
 	MockOrder mockOrder;
 	
@@ -26,7 +28,7 @@ public class HotelBLService_Stub implements HotelBLService{
 		
 	}
 	
-	public HotelBLService_Stub (int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r){
+	public HotelBLService_Stub (int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r,String sn,String pn){
 		hotelID=hid;
 		hotelName=hn;
 		hotelAddress=ha;
@@ -36,12 +38,14 @@ public class HotelBLService_Stub implements HotelBLService{
 		roomNumber=rn;
 		wholeRooms = rooms;
 		rating =r;
+		staffName = sn;
+		phoneNumber = pn;
 	}
 	
 	/**
-	 * 
+	 * 浏览酒店信息
 	 * @param name
-	 * @return 浏览酒店信息
+	 * @return hotelInfoList
 	 */
 	public ArrayList<HotelVO> reviewHotelInfo(String name){
 		ArrayList<HotelVO> hotelInfoList = new ArrayList<HotelVO>();
@@ -51,9 +55,9 @@ public class HotelBLService_Stub implements HotelBLService{
 	}
 	
 	/**
-	 * 
+	 * 浏览酒店列表
 	 * @param 
-	 * @return 浏览酒店列表
+	 * @return hotelList
 	 */
 	public ArrayList<HotelVO> reviewHotelList(){
 		ArrayList<HotelVO> hotelList = new ArrayList<HotelVO>();
@@ -63,9 +67,9 @@ public class HotelBLService_Stub implements HotelBLService{
 	}
 
 	/**
-	 * 
+	 * 创建酒店
 	 * @param hvo
-	 * @return 创建酒店
+	 * @return ResultMessage
 	 */
 	public ResultMessage createHotel(HotelVO hvo){
 		if(hvo != null){
@@ -75,9 +79,9 @@ public class HotelBLService_Stub implements HotelBLService{
 	}
 
 	/**
-	 * 
+	 * 删除酒店
 	 * @param hvo
-	 * @return 删除酒店
+	 * @return ResultMessage
 	 */
 	public ResultMessage deleteHotel(HotelVO hvo){
 		if(hvo != null){
@@ -87,9 +91,9 @@ public class HotelBLService_Stub implements HotelBLService{
 	}
 
 	/**
-	 * 
+	 * 修改酒店基本信息
 	 * @param hvo
-	 * @return 修改酒店基本信息
+	 * @return ResultMessage
 	 */
 	public ResultMessage modifyHotel(HotelVO hvo){
 		if(hvo != null){
@@ -105,9 +109,9 @@ public class HotelBLService_Stub implements HotelBLService{
 	}
 
 	/**
-	 * 
+	 * 评价酒店
 	 * @param hvo
-	 * @return 评价酒店
+	 * @return ResultMessage
 	 */
 	public ResultMessage gradeHotel(HotelVO hvo){
 		if(hvo != null){
@@ -117,9 +121,9 @@ public class HotelBLService_Stub implements HotelBLService{
 	}
 
 	/**
-	 * 
+	 * 按酒店名称搜索酒店基本信息
 	 * @param name
-	 * @return 按酒店名称搜索酒店基本信息
+	 * @return hotelInfoList
 	 */
 	public ArrayList<HotelVO> searchHotel(String name){
 		ArrayList<HotelVO> hotelInfoList = new ArrayList<HotelVO>();
@@ -127,9 +131,9 @@ public class HotelBLService_Stub implements HotelBLService{
 	}
 
 	/**
-	 * 
+	 * 按类型搜索房间
 	 * @param type
-	 * @return 按类型搜索房间
+	 * @return RoomInfoList
 	 */
 	public ArrayList<RoomVO> searchRoom(String type){
 		ArrayList<RoomVO> RoomInfoList = new ArrayList<RoomVO>();

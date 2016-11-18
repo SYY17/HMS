@@ -17,8 +17,10 @@ public class HotelPO implements Serializable{
 	int roomNumber;
 	ArrayList<RoomPO> wholeRooms; 
 	int rating;
+	String staffName;
+	String phoneNumber;
 	
-	public HotelPO(int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomPO> rooms,int r){
+	public HotelPO(int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomPO> rooms,int r,String sn,String pn){
 		hotelID=hid;
 		hotelName=hn;
 		hotelAddress=ha;
@@ -28,6 +30,8 @@ public class HotelPO implements Serializable{
 		roomNumber=rn;
 		wholeRooms=rooms;
 		rating =r;
+		staffName = sn;
+		phoneNumber = pn;
 	}
 	
 	/**
@@ -101,5 +105,21 @@ public class HotelPO implements Serializable{
 	 */
 	public int getRating(){
 		return rating;
+	}
+	
+	/**
+	 * 
+	 * @return 获得工作人员姓名
+	 */
+	public String getStaffName(){
+		return staffName;
+	}
+	
+	/**
+	 * 
+	 * @return 获得酒店电话号码
+	 */
+	public String getPhoneNumber(){
+		return phoneNumber;
 	}
 }
