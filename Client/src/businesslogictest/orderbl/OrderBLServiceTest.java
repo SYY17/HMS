@@ -1,10 +1,12 @@
-package businesslogic.orderbl;
+package businesslogictest.orderbl;
 
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
+
+import businesslogic.orderbl.OrderBLService_Stub;
 import businesslogicservice.ResultMessage;
 import businesslogicservice.orderblservice.OrderBLService;
 import vo.HotelVO;

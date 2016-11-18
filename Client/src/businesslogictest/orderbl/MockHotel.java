@@ -1,4 +1,4 @@
-package businesslogic.orderbl;
+package businesslogictest.orderbl;
 
 import java.util.ArrayList;
 import businesslogic.hotelbl.HotelBLService_Stub;

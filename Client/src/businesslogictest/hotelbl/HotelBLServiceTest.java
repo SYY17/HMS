@@ -1,4 +1,4 @@
-package businesslogic.hotelbl;
+package businesslogictest.hotelbl;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
+import businesslogic.hotelbl.HotelBLService_Stub;
 import businesslogicservice.ResultMessage;
 import businesslogicservice.hotelBLService.HotelBLService;
 import vo.HotelVO;

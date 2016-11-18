@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import businesslogicservice.ResultMessage;
 import businesslogicservice.hotelBLService.HotelBLService;
+import businesslogictest.hotelbl.MockOrder;
+import businesslogictest.hotelbl.MockPromotion;
 import vo.HotelVO;
 import vo.RoomVO;
 
