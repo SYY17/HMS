@@ -1,4 +1,3 @@
-/businesslogictest/
 /businesslogic/
 /businesslogicservice/
 /businesslogictest/
@@ -6,5 +5,3 @@
 /po/
 /presentation/
 /vo/
-/.DS_Store
-/FXML/
