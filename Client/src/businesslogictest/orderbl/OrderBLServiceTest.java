@@ -1,12 +1,10 @@
-package businesslogictest.orderbl;
+package businesslogic.orderbl;
 
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
-
-import businesslogic.orderbl.OrderBLService_Stub;
 import businesslogicservice.ResultMessage;
 import businesslogicservice.orderblservice.OrderBLService;
 import vo.HotelVO;
@@ -41,7 +39,7 @@ public class OrderBLServiceTest {
 		hotelID = 00000000;
 		orderList = null;
 		orderVO = new OrderVO(userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
-		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID);
+		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID, null, null);
 		promotionVO = new PromotionVO("双十一下订单八折优惠", new Date(System.currentTimeMillis()), 20920010);
 	}
 	
