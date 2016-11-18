@@ -9,6 +9,7 @@ public class HotelVO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	int hotelID;
 	String hotelName;
+//	String hotelWorkerName;
 	String hotelAddress;
 	String businessArea;
 	String hotelDescription;
@@ -16,10 +17,9 @@ public class HotelVO implements Serializable{
 	int roomNumber;
 	ArrayList<RoomVO> wholeRooms; 
 	int rating;
-	String staffName;
-	String phoneNumber;
+//	double phoneNumber;
 	
-	public HotelVO(int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r,String sn,String pn){
+	public HotelVO(int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r){
 		hotelID=hid;
 		hotelName=hn;
 		hotelAddress=ha;
@@ -29,96 +29,42 @@ public class HotelVO implements Serializable{
 		roomNumber=rn;
 		wholeRooms=rooms;
 		rating =r;
-		staffName = sn;
-		phoneNumber = pn;
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店ID
-	 */
 	public int getHotelID(){
 		return hotelID;
 		
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店名称
-	 */
 	public String getHotelName(){
 		return hotelName;
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店地址
-	 */
 	public String getHotelAddress(){
 		return hotelAddress;
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店商圈
-	 */
 	public String getBusinessArea(){
 		return businessArea;
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店简介
-	 */
 	public String getHotelDescription(){
 		return hotelDescription;
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店星级
-	 */
 	public int getStarLevel(){
 		return starLevel;
 	}
 	
-	/**
-	 * 
-	 * @return 获得房间号
-	 */
 	public int getRoomNumber(){
 		return roomNumber;
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店房间列表
-	 */
 	public ArrayList<RoomVO> getRooms(){
 		return wholeRooms;
 	}
 	
-	/**
-	 * 
-	 * @return 获得酒店评级
-	 */
 	public int getRating(){
 		return rating;
-	}
-	
-	/**
-	 * 
-	 * @return 获得工作人员姓名
-	 */
-	public String getStaffName(){
-		return staffName;
-	}
-	
-	/**
-	 * 
-	 * @return 获得酒店电话号码
-	 */
-	public String getPhoneNumber(){
-		return phoneNumber;
 	}
 }

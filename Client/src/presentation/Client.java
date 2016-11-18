@@ -23,7 +23,7 @@ public class Client {
 		
 		//hotel驱动测试
 		System.out.println("* Hotel Driver Test:");
-		HotelBLService hotelBLService = new HotelBLService_Stub(0, null, null, null, null, 0, 0, null, 0, null, null);
+		HotelBLService hotelBLService = new HotelBLService_Stub(0, null, null, null, null, 0, 0, null, 0);
 		HotelBLService_Driver hotelDriver = new HotelBLService_Driver();
 		hotelDriver.drive(hotelBLService);
 		System.out.println("* Test Completed");

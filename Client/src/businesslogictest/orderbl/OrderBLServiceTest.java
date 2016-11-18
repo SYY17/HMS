@@ -47,13 +47,8 @@ public class OrderBLServiceTest {
 		roomNumber = 0;
 		hotelID = 00000000;
 		orderList = null;
-<<<<<<< HEAD
 		orderVO = new OrderVO(orderID, orderStatus, price, userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
 		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID);
-=======
-		orderVO = new OrderVO(userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
-		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID, null, null);
->>>>>>> origin/master
 		promotionVO = new PromotionVO("双十一下订单八折优惠", new Date(System.currentTimeMillis()), 20920010);
 	}
 	

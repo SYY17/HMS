@@ -32,30 +32,58 @@ public class OrderPO implements Serializable{
 		rooms=rt;
 	}
 	
+	/**
+	 * 
+	 * @return 获得订单对应用户ID
+	 */
 	public int getUserID(){
 		return userID;
 	}
 	
+	/**
+	 * 
+	 * @return 获得订单对应下单时间
+	 */
 	public Date getSetTime(){
 		return setTime;
 	}
 	
-	public Date getCheckInTime(){
+	/**
+	 * 
+	 * @return 获得订单对应入住时间
+	 */
+	public Date getCheckIn(){
 		return checkIn;
 	}
 	
-	public Date getCheckOutTime(){
+	/**
+	 * 
+	 * @return 获得订单对应离开时间
+	 */
+	public Date getCheckOut(){
 		return checkOut;
 	}
 	
+	/**
+	 * 
+	 * @return 获得订单对应入住时间
+	 */
 	public int getRoomNumber(){
 		return roomNumber;
 	}
 	
+	/**
+	 * 
+	 * @return 获得订单对应酒店ID
+	 */
 	public int getHotelID(){
 		return hotelID;
 	}
 	
+	/**
+	 * 
+	 * @return 获得订单对应房间列表
+	 */
 	public ArrayList<RoomPO> getRooms(){
 		return rooms;
 	}

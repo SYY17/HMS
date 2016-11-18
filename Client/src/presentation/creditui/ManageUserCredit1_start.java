@@ -23,7 +23,7 @@ public class ManageUserCredit1_start extends Application{
 		}
 	}
 
-//	public static void main(String[] args) {
-//		launch(args);
-//	}
+	public static void main(String[] args) {
+		launch(args);
+	}
 }

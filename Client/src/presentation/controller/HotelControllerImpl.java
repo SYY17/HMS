@@ -18,12 +18,10 @@ public class HotelControllerImpl implements HotelControllerService{
 	int roomNumber;
 	ArrayList<RoomVO> wholeRooms;
 	int rating;
-	String staffName;
-	String phoneNumber;
 	
 	private HotelBLService hotelBLService;
 	
-	public HotelControllerImpl(int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r,String sn,String pn){
+	public HotelControllerImpl(int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r){
 		hotelID=hid;
 		hotelName=hn;
 		hotelAddress=ha;
@@ -33,10 +31,8 @@ public class HotelControllerImpl implements HotelControllerService{
 		roomNumber=rn;
 		wholeRooms = rooms;
 		rating =r;
-		staffName = sn;
-		phoneNumber = pn;
 		
-		hotelBLService = new HotelBLService_Stub(hotelID,hotelName,hotelAddress,businessArea,hotelDescription,starLevel,roomNumber,wholeRooms,rating,staffName,phoneNumber);
+		hotelBLService = new HotelBLService_Stub(hotelID,hotelName,hotelAddress,businessArea,hotelDescription,starLevel,roomNumber,wholeRooms,rating);
 	}
 	
 	/**

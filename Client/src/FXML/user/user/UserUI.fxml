@@ -64,17 +64,18 @@
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)">
                      <items>
                         <MenuItem mnemonicParsing="false" text="订单浏览" />
+                        <MenuItem mnemonicParsing="false" text="订单执行" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信息管理(I)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="用户信息" />
+                        <MenuItem mnemonicParsing="false" text="酒店信息" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="历史记录(H)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="历史订单" />
-                        <MenuItem mnemonicParsing="false" text="评价记录" />
+                        <MenuItem mnemonicParsing="false" text="营销策略浏览" />
+                        <MenuItem mnemonicParsing="false" text="营销策略制定" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">

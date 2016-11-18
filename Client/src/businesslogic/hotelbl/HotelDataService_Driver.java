@@ -8,7 +8,7 @@ import po.HotelPO;
 public class HotelDataService_Driver {
 	
 	public void drive(HotelDataService hotelDataService) throws RemoteException{
-		HotelPO hpo = new HotelPO(0, null, null, null, null, 0, 0, null, 0, null, null);
+		HotelPO hpo = new HotelPO(0, null, null, null, null, 0, 0, null, 0);
 		String name = null;
 		String field = null;
 		String value = null;

@@ -14,10 +14,8 @@ public class HotelLineItem {
 	int roomNumber;
 	ArrayList<RoomVO> wholeRooms;
 	int rating;
-	String staffName;
-	String phoneNumber;
 	
-	public HotelLineItem (int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r,String sn,String pn){
+	public HotelLineItem (int hid,String hn,String ha,String ba,String hd,int sl,int rn,ArrayList<RoomVO> rooms,int r){
 		hotelID=hid;
 		hotelName=hn;
 		hotelAddress=ha;
@@ -27,8 +25,6 @@ public class HotelLineItem {
 		roomNumber=rn;
 		wholeRooms = rooms;
 		rating =r;
-		staffName = sn;
-		phoneNumber = pn;
 	}
 	
 	/**
@@ -174,36 +170,4 @@ public class HotelLineItem {
 	public void setRating(int rating){
 		this.rating = rating;
 	}
-	
-	/**
-	 * 
-	 * @return 获得工作人员姓名
-	 */
-	public String getStaffName(){
-		return staffName;
-	}
-	
-	/**
-	 * 设置酒店工作人员姓名
-	 * @param staffName
-	 */
-	public void setStaffName(String staffName){
-		this.staffName = staffName;
-	}
-	
-	/**
-	 * 
-	 * @return 获得酒店电话号码
-	 */
-	public String getPhoneNumber(){
-		return phoneNumber;
-	}
-	
-	/**
-	 * 设置酒店电话号码
-	 * @param phoneNumber
-	 */
-	public void setPhoneNumber(String phoneNumber){
-		this.phoneNumber = phoneNumber;
-	}	
 }
