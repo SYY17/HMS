@@ -60,10 +60,7 @@
                   <DropShadow />
                </effect>
                <menus>
-                  <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)">
-                     <items>
-                        <MenuItem id="credit_manage" mnemonicParsing="false" onAction="#onOrderManage" text="订单管理" />
-                     </items></Menu>
+                  <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)" />
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信用管理(C)">
                      <items>
                         <MenuItem id="credit_manage" mnemonicParsing="false" onAction="#onCreditManage" text="信用值管理" />
