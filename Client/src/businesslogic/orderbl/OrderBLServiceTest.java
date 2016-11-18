@@ -1,25 +1,19 @@
-package businesslogictest.orderbl;
+package businesslogic.orderbl;
 
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
-
-import businesslogic.orderbl.OrderBLService_Stub;
 import businesslogicservice.ResultMessage;
 import businesslogicservice.orderblservice.OrderBLService;
 import vo.HotelVO;
-import vo.OrderStatus;
 import vo.OrderVO;
 import vo.PromotionVO;
 import vo.RoomVO;
 
 public class OrderBLServiceTest {
 	private OrderBLService orderBlService;
-	int orderID;
-	OrderStatus orderStatus;
-	int price;
 	int userID;
 	Date setTime;
 	Date checkIn;
@@ -37,9 +31,6 @@ public class OrderBLServiceTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		orderID = 0;
-		orderStatus = null;
-		price = 0;
 		userID = 00000000;
 		setTime = null;
 		checkIn = null;
@@ -47,13 +38,8 @@ public class OrderBLServiceTest {
 		roomNumber = 0;
 		hotelID = 00000000;
 		orderList = null;
-<<<<<<< HEAD
-		orderVO = new OrderVO(orderID, orderStatus, price, userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
-		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID);
-=======
 		orderVO = new OrderVO(userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
 		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID, null, null);
->>>>>>> origin/master
 		promotionVO = new PromotionVO("双十一下订单八折优惠", new Date(System.currentTimeMillis()), 20920010);
 	}
 	

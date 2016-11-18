@@ -24,8 +24,13 @@ public class OrderBLService_Driver {
 		int roomNumber=0;
 		int hotelID=0;
 		ArrayList<RoomVO> rooms=null;
+<<<<<<< HEAD
 		OrderVO ovo=new OrderVO(orderID, orderStatus, price, userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
 		HotelVO hvo=new HotelVO(userID, null, null, null, null, roomNumber, 0, null, hotelID);
+=======
+		OrderVO ovo=new OrderVO(userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
+		HotelVO hvo=new HotelVO(userID, null, null, null, null, roomNumber, 0, null, hotelID, null, null);
+>>>>>>> origin/master
 		PromotionVO pvo=new PromotionVO(null, null, 0);
 		
 		ArrayList<OrderVO> list=orderBLService.reviewOrder(userID);
