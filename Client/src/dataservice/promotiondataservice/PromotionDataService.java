@@ -47,13 +47,6 @@ public interface PromotionDataService {
 	
 	/**
 	 * 
-	 * @param ppo
-	 * @throws RemoteException
-	 */
-	public void update(PromotionPO ppo) throws RemoteException;
-	
-	/**
-	 * 
 	 * @throws RemoteException
 	 */
 	public void init() throws RemoteException;

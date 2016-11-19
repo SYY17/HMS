@@ -13,6 +13,23 @@ public class PromotionDataServiceMySqlImpl_Stub implements PromotionDataService{
 	
 	/**
 	 * 
+	 * @param id
+	 * @param start
+	 * @param content
+	 * @return 根据ID, 营销策略内容和起始时间查找并返回营销策略信息
+	 * @throws RemoteException
+	 */
+	@Override
+	public ArrayList <PromotionPO> finds(int id, String content, Date start) throws RemoteException {
+		// TODO Auto-generated method stub
+		ArrayList <PromotionPO> list = new ArrayList<>();
+		PromotionPO promotion = new PromotionPO(content, start, id);
+		list.add(promotion);
+		return list;
+	}
+	
+	/**
+	 * 
 	 * @return 根据ID查找并返回所有营销策略信息
 	 * @throws RemoteException
 	 */
@@ -76,17 +93,6 @@ public class PromotionDataServiceMySqlImpl_Stub implements PromotionDataService{
 	public void delete(PromotionPO ppo) throws RemoteException {
 		// TODO Auto-generated method stub
 		System.out.println("Delete Succeed!");
-	}
-
-	/**
-	 * 
-	 * @param ppo
-	 * @throws RemoteException
-	 */
-	@Override
-	public void update(PromotionPO ppo) throws RemoteException {
-		// TODO Auto-generated method stub
-		System.out.println("Update Succeed!");
 	}
 
 	/**

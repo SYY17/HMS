@@ -9,8 +9,10 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import presentation.loginui.LogFrame;
 import presentation.userui.user.AllOrder_start;
+
 import presentation.userui.user.DetailedInfomation_start;
 import presentation.userui.user.OrderAndRating_start;
+
 
 public class User_controller {
 	
@@ -27,8 +29,10 @@ public class User_controller {
 	}
 	
 	@FXML
+
 	private void onDetailedInfo(ActionEvent event) {
 		new DetailedInfomation_start().start(stage);
+
 	}
 
 }

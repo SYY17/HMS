@@ -37,9 +37,6 @@ public class OrderBLServiceTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		orderID = 0;
-		orderStatus = null;
-		price = 0;
 		userID = 00000000;
 		setTime = null;
 		checkIn = null;
@@ -48,7 +45,7 @@ public class OrderBLServiceTest {
 		hotelID = 00000000;
 		orderList = null;
 		orderVO = new OrderVO(orderID, orderStatus, price, userID, setTime, checkIn, checkOut, roomNumber, hotelID, rooms);
-		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID);
+		hotelVO = new HotelVO(hotelID, null, null, null, null, hotelID, hotelID, null, hotelID, null, null);
 		promotionVO = new PromotionVO("双十一下订单八折优惠", new Date(System.currentTimeMillis()), 20920010);
 	}
 	

@@ -22,7 +22,6 @@ public class PromotionDataService_Driver {
 		if(list != null) System.out.println("Promotions contains certain content got!");
 		promotionDataService.insert(ppo);
 		promotionDataService.delete(ppo);
-		promotionDataService.update(ppo);
 		promotionDataService.finish();
 	}
 }

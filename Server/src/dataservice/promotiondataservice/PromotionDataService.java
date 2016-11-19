@@ -9,6 +9,16 @@ public interface PromotionDataService {
 	
 	/**
 	 * 
+	 * @param id
+	 * @param start
+	 * @param content
+	 * @return 根据ID, 营销策略内容和起始时间查找并返回营销策略信息
+	 * @throws RemoteException
+	 */
+	public ArrayList <PromotionPO> finds (int id, String content, Date start) throws RemoteException;
+	
+	/**
+	 * 
 	 * @return 根据ID查找并返回所有营销策略信息
 	 * @throws RemoteException
 	 */
@@ -44,13 +54,6 @@ public interface PromotionDataService {
 	 * @throws RemoteException
 	 */
 	public void delete(PromotionPO ppo) throws RemoteException;
-	
-	/**
-	 * 
-	 * @param ppo
-	 * @throws RemoteException
-	 */
-	public void update(PromotionPO ppo) throws RemoteException;
 	
 	/**
 	 * 

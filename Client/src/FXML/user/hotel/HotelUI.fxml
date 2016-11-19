@@ -56,17 +56,17 @@
               <menus>
                 <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="订单管理(O)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="订单浏览" />
-                        <MenuItem mnemonicParsing="false" text="订单执行" />
+                        <MenuItem fx:id="Item_review" mnemonicParsing="false" onAction="#onReviewOrderList" text="订单浏览" />
+                        <MenuItem fx:id="Item_execute" mnemonicParsing="false" onAction="#onExecute" text="订单执行" />
                      </items></Menu>
                 <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="信息管理(I)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="酒店信息" />
+                        <MenuItem fx:id="Item_Manage" mnemonicParsing="false" onAction="#onManage" text="酒店信息" />
                      </items></Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="营销策略(P)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="营销策略浏览" />
-                        <MenuItem mnemonicParsing="false" text="营销策略制定" />
+                        <MenuItem fx:id="Item_promotion" mnemonicParsing="false" onAction="#onReviewPromotion" text="营销策略浏览" />
+                        <MenuItem fx:id="Item_createPromotion" mnemonicParsing="false" onAction="#onCreatePromotion" text="营销策略制定" />
                      </items></Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="酒店评价(R)">
                      <items>
@@ -128,6 +128,11 @@
                         <DropShadow />
                      </effect>
                   </TableView>
+                  <Button fx:id="button_editorder" layoutX="460.0" layoutY="-5.0" mnemonicParsing="false" onAction="#onEditOrder" text="编辑">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
                </children>
             </Pane>
             <Pane id="panel_promotion" layoutX="2.0" layoutY="352.0" prefHeight="173.0" prefWidth="800.0">
