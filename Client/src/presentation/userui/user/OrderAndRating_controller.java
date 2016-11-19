@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import presentation.loginui.LogFrame;
+import presentation.mainui.User_start;
 
 public class OrderAndRating_controller {
 	
@@ -33,9 +34,5 @@ public class OrderAndRating_controller {
 	private void onDetailedInfo(ActionEvent event) {
 		new DetailedInfomation_start().start(stage);
 	}
-	
-	@FXML
-	private void onRating(ActionEvent event) {
-		JOptionPane.showMessageDialog(null, "�����˳�", "����", JOptionPane.PLAIN_MESSAGE);
-	}
+
 }

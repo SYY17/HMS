@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import presentation.loginui.LogFrame;
+import presentation.mainui.User_start;
 
 public class Credit_controller {
 	
@@ -33,4 +34,5 @@ public class Credit_controller {
 	private void onDetailedInfo(ActionEvent event) {
 		new DetailedInfomation_start().start(stage);
 	}
+	
 }

@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import presentation.loginui.LogFrame;
+import presentation.mainui.User_start;
 
 public class DetailedInfomation_controller {
 	
@@ -36,7 +37,6 @@ public class DetailedInfomation_controller {
 	
 	@FXML
 	private void onEdit(ActionEvent event) {
-		new User_start().start(stage);
 		//JOptionPane.showMessageDialog(null, "�����˳�", "����", JOptionPane.PLAIN_MESSAGE);
 	}
 	
@@ -45,4 +45,5 @@ public class DetailedInfomation_controller {
 		new User_start().start(stage);
 		//JOptionPane.showMessageDialog(null, "�����˳�", "����", JOptionPane.PLAIN_MESSAGE);
 	}
+
 }

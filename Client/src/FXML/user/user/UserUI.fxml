@@ -80,13 +80,13 @@
                   </Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="历史记录(H)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="历史订单" />
-                        <MenuItem mnemonicParsing="false" text="评价记录" />
+                        <MenuItem id="AllOrderHistory" mnemonicParsing="false" text="历史订单" />
+                        <MenuItem id="Rating" mnemonicParsing="false" text="评价记录" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" style="-fx-font-weight: bold;" text="帮助(H)">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="关于" />
+                        <MenuItem id="Help" mnemonicParsing="false" text="关于" />
                      </items>
                   </Menu>
                </menus>
