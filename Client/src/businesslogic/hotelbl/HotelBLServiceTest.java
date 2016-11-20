@@ -24,8 +24,8 @@ public class HotelBLServiceTest {
 	@Before
 	public void setUp() throws Exception {
 		rooms = new ArrayList<RoomVO>();
-		h1 = new HotelVO(00001, "xxhotel", "", "新街口", "暂无简介", 4, 816, rooms, 3, "李四", "13333333333");
-		h2 = new HotelVO(01001, "学生宿舍6栋", "南京市栖霞区南京大学仙林校区", "仙林大学城", "普通的学生宿舍", 5, 314, rooms, 5, "王五", "13888888888");
+		h1 = new HotelVO(00001, "xxhotel", "", "新街口", "暂无简介", 4, 816, rooms, 3);
+		h2 = new HotelVO(01001, "学生宿舍6栋", "南京市栖霞区南京大学仙林校区", "仙林大学城", "普通的学生宿舍", 5, 314, rooms, 5);
 	}
 	
 	/**
@@ -62,12 +62,12 @@ public class HotelBLServiceTest {
 		assertEquals(h1.getRoomNumber(), list1.get(0).getRoomNumber());
 		assertEquals(h1.getRooms(), list1.get(0).getRooms());
 		assertEquals(h1.getRating(), list1.get(0).getRating());
-		assertEquals(h1.getStaffName(), list1.get(0).getStaffName());
-		assertEquals(h1.getPhoneNumber(), list1.get(0).getPhoneNumber());
 		list2 = hotelBLService.searchRoom(type);
 		assertEquals(h1.getRooms().get(0).getPrice(), list2.get(0).getPrice());
 		assertEquals(h1.getRooms().get(0).getRoomType(), list2.get(0).getRoomType());
-		assertEquals(h1.getRooms().get(0).getState(), list2.get(0).getState());
+		assertEquals(h1.getRooms().get(0).getHotelID(), list2.get(0).getHotelID());//
+		assertEquals(h1.getRooms().get(0).getTotalSum(), list2.get(0).getTotalSum());//
+		assertEquals(h1.getRooms().get(0).getRemainSum(), list2.get(0).getRemainSum());
 	}
 	
 	/**
@@ -126,8 +126,6 @@ public class HotelBLServiceTest {
 		assertEquals(h1.getHotelDescription(), list.get(0).getHotelDescription());
 		assertEquals(h1.getStarLevel(), list.get(0).getStarLevel());
 		assertEquals(h1.getRating(), list.get(0).getRating());
-		assertEquals(h1.getStaffName(), list.get(0).getStaffName());
-		assertEquals(h1.getPhoneNumber(), list.get(0).getPhoneNumber());
 	 }
 	  
 	 /**
