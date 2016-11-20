@@ -23,4 +23,7 @@ public class MakePromotionStrategy1_start extends Application{
 		}
 	}
 	
+	public static void main(String[] args) {
+		launch(args);
+	}
 }
