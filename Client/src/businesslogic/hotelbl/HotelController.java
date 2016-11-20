@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import businesslogicservice.ResultMessage;
 import businesslogicservice.hotelBLService.HotelBLService;
 import vo.HotelVO;
+import vo.OrderVO;
+import vo.PromotionVO;
 import vo.RoomVO;
 
 public class HotelController implements HotelBLService{
