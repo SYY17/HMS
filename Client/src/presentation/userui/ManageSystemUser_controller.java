@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import presentation.hotelui.ManageHotelCreatingApplication_start;
 import presentation.loginui.LogFrame;
@@ -33,12 +32,5 @@ public class ManageSystemUser_controller {
 	@FXML
 	private void onManageHotelCreatingApplication(ActionEvent event) throws Exception {
 		new ManageHotelCreatingApplication_start().start(stage);
-	}
-	
-	@FXML
-	private void onAbout(ActionEvent event) throws Exception {
-		Alert alert = new Alert(Alert.AlertType.INFORMATION);
-		alert.setHeaderText("据说这是大作业");
-		alert.showAndWait();
 	}
 }
